@@ -1,10 +1,10 @@
 {
   "homepage": "https://github.com/Hemmels/pokemc",
   "<mcversion>": {
-    "<modversion>": "a0.1"
+    "<modversion>": "0.0.1"
   },
   "promos": {
-    "<mcversion>-latest": "a0.1",
-    "<mcversion>-recommended": "a0.1"
+    "<mcversion>-latest": "0.0.1",
+    "<mcversion>-recommended": "0.0.1"
   }
 }
