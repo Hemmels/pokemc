@@ -12,3 +12,9 @@ gradlew eclipse
 from the command line.
 
 Then F5 refresh the project. Happy days.
+
+For reference, Forge files:
+http://files.minecraftforge.net/
+
+And gradle plugin snapshots:
+http://export.mcpbot.bspk.rs/snapshot/
