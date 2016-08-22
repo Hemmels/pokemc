@@ -4,9 +4,9 @@
   "description": "Pokemon Go for Minecraft as made by us",
   "version": ${version},
   "mcversion": ${mcversion},
-  "logoFile": "assets/examplemod/textures/logo.png",
+  "logoFile": "assets/pokemc/textures/items/pikachu_face.png",
   "url": "minecraftforge.net/",
   "updateJSON": "minecraftforge.net/versions.json",
   "authorList": ["Hemmels", "lamboona"],
-  "credits": "Thanks for all the fish.",
+  "credits": "Thanks for all the fish."
 }]

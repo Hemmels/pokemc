@@ -17,17 +17,13 @@ public class PokemcMod {
 	public static final String MODID  = "pokemc";
 	public static final String MODNAME  = "Pokemon Go for Minecraft";
 	public static final String MODVER = "0.0.1-alpha";
+	
+	@Instance
+	public static PokemcMod instance = new PokemcMod();
     
 	@SidedProxy(clientSide="uk.pokemc.client.ClientProxy", serverSide="uk.pokemc.server.ServerProxy")
 	public static BasicProxy proxy;
-	
-	@Instance(value = PokemcMod.MODID)
-	public static PokemcMod instance;
-	
-	public PokemcMod(){
-		
-	}
-	
+
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent e){
 		proxy.preInit(e);
