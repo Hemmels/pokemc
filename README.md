@@ -5,8 +5,10 @@ To build from a clone of this repo, simply run
 
 gradlew setupDecompWorkspace --refresh-dependencies
 
-then refresh the project and then
+then
 
 gradlew eclipse
 
 from the command line.
+
+Then F5 refresh the project. Happy days.
