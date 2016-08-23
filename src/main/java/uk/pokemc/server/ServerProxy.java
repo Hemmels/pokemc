@@ -30,7 +30,6 @@ public class ServerProxy extends BasicProxy{
 
 	@Override
 	public void registerItemRenderer(Item item, int meta, String id) {
-		// TODO Auto-generated method stub
 		
 	}
 

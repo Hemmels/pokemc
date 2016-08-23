@@ -6,9 +6,10 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import uk.pokemc.items.ItemBase;
 
 public class PokemcItems {
-	
+
+	public static final Item POKEBALL = register(new ItemBase("pokeball").setCreativeTab(CreativeTabs.TOOLS));
 	public static final Item POKEDEX = register(new ItemBase("pokedex").setCreativeTab(CreativeTabs.TOOLS));
-	public static ItemBase PIKACHU = register(new ItemBase("pikachu").setCreativeTab(CreativeTabs.TOOLS));
+	public static final ItemBase PIKACHU = register(new ItemBase("pikachu").setCreativeTab(CreativeTabs.TOOLS));
 
 	private static <T extends Item> T register(T item) {
 		GameRegistry.register(item);

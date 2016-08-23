@@ -1,15 +1,11 @@
 package uk.pokemc.runtime;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import uk.pokemc.blocks.BlockBase;
-import uk.pokemc.blocks.PokeBlock;
 
 public class PokemcBlocks {
-	public static BlockBase pikachu;
 
 	public static void init() {
 //		pikachu = register(new BlockBase(Material.WOOD, "pikachu").setCreativeTab(CreativeTabs.MATERIALS));
