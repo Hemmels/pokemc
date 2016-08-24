@@ -39,6 +39,8 @@ public class EntityPikachu extends EntityPokemon
         this.setCustomNameTag("Pikachu");
         this.setCanPickUpLoot(false);
         this.setHealth(10);
+        // 92 is cow - http://minecraft.gamepedia.com/Data_values/Entity_IDs
+        this.setEntityId(254);
         // TODO: Reserve and use IDs 1000+ for each pokemon?
         this.setSize(0.5F, 0.5F);
         this.dataManager.set(TYPE, Byte.valueOf((byte)(1)));
