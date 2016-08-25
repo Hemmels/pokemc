@@ -23,6 +23,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraft.world.storage.loot.LootTableList;
 import uk.pokemc.runtime.PokemcMod;
@@ -33,6 +34,8 @@ public class EntityPikachu extends EntityPokemon
     private static final DataParameter<Integer> ID = EntityDataManager.<Integer>createKey(EntityPikachu.class, DataSerializers.VARINT);
     private static final DataParameter<Byte> TYPE = EntityDataManager.<Byte>createKey(EntityPikachu.class, DataSerializers.BYTE);
 
+    public static final int ENTITY_ID = 254;//MathHelper.getRandomUUID().hashCode();
+    
     public EntityPikachu(World worldIn)
     {
         super(worldIn);
