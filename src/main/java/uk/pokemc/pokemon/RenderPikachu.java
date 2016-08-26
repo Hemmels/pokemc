@@ -18,6 +18,11 @@ public class RenderPikachu extends RenderLiving<EntityPikachu> {
 
     public RenderPikachu(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn){
     	super(renderManagerIn, modelBaseIn, shadowSizeIn);
+    	System.out.println("Attempt2 to call Pika renderer");
+    }
+    public RenderPikachu(RenderManager renderManagerIn){
+    	super(renderManagerIn, null, 2);
+    	System.out.println("Attempt to call Pika renderer");
     }
 
     /**

@@ -47,13 +47,14 @@ public class EntityPikachu extends EntityPokemon
         this.setHealth(10);
         // TODO: Reserve and use IDs 1000+ for each pokemon?
         this.setSize(0.5F, 0.5F);
-        this.dataManager.set(TYPE, Byte.valueOf((byte)(1)));
+//        this.dataManager.set(TYPE, Byte.valueOf((byte)(1)));
+        System.out.println("New pikachu! Yaye!");
     }
 
     protected void entityInit()
     {
         super.entityInit();
-        this.dataManager.register(TYPE, Byte.valueOf((byte)0));
+//        this.dataManager.register(TYPE, Byte.valueOf((byte)0));
     }
 
     /**
