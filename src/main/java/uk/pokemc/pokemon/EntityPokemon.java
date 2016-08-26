@@ -1,7 +1,11 @@
 package uk.pokemc.pokemon;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.annotation.Nullable;
 
+import info.ata4.minecraft.dragon.server.entity.helper.DragonHelper;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.passive.EntityAnimal;
@@ -17,8 +21,19 @@ public class EntityPokemon extends EntityAnimal {
 	
 	public static DamageSource INTERPOKEMON = new DamageSource("interPokemon");
 
+    // server/client delegates
+    private final Map<Class, PokemonHelper> helpers = new HashMap<>();
+    
 	public EntityPokemon(World worldIn) {
 		super(worldIn);
+		
+        // enables walking over blocks
+        stepHeight = 1;
+        
+        helpers.put(PokemonInteractHelper.class, new PokemonInteractHelper(this));
+        
+        // init helpers
+        helpers.values().forEach(PokemonHelper::applyEntityAttributes);
 	}
 	
 	@Override
@@ -58,8 +73,6 @@ public class EntityPokemon extends EntityAnimal {
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(20.0D);
         this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.30000001192092896D);
-        this.getEntityAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(0.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.FOLLOW_RANGE).setBaseValue(64.0D);
     }
 	
 	@Override

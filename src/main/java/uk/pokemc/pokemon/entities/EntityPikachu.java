@@ -1,4 +1,4 @@
-package uk.pokemc.pokemon;
+package uk.pokemc.pokemon.entities;
 
 import java.util.Calendar;
 
@@ -26,13 +26,16 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraft.world.storage.loot.LootTableList;
+import uk.pokemc.pokemon.EntityPokemon;
 import uk.pokemc.runtime.PokemcMod;
 
 public class EntityPikachu extends EntityPokemon
 {
 	// No shorts used in Forge/MC - Use Integer instead
-    private static final DataParameter<Integer> ID = EntityDataManager.<Integer>createKey(EntityPikachu.class, DataSerializers.VARINT);
-    private static final DataParameter<Byte> TYPE = EntityDataManager.<Byte>createKey(EntityPikachu.class, DataSerializers.BYTE);
+    private static final DataParameter<Integer> ID = EntityDataManager.<Integer>createKey(
+    		EntityPikachu.class, DataSerializers.VARINT);
+    private static final DataParameter<Byte> TYPE = EntityDataManager.<Byte>createKey(
+    		EntityPikachu.class, DataSerializers.BYTE);
 
     public static final int ENTITY_ID = 254;//MathHelper.getRandomUUID().hashCode();
     
