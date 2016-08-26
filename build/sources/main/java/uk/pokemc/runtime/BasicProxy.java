@@ -9,9 +9,7 @@ public abstract class BasicProxy {
 
 	public abstract void preInit(FMLPreInitializationEvent e);
 
-	public void init(FMLInitializationEvent e){
-		PokemonRegister.registerPokemon();
-	}
+	public abstract void init(FMLInitializationEvent e);
 
 	public abstract void postInit(FMLPostInitializationEvent e);
 	

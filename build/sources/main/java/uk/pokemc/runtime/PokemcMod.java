@@ -1,5 +1,12 @@
 package uk.pokemc.runtime;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.model.ModelSheep2;
+import net.minecraft.client.renderer.block.model.IBakedModel;
+import net.minecraft.client.renderer.entity.RenderManager;
+import net.minecraft.client.renderer.entity.RenderSheep;
+import net.minecraft.entity.monster.EntityPolarBear;
+import net.minecraft.entity.passive.EntitySheep;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -9,6 +16,9 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import uk.pokemc.client.ClientEventListener;
+import uk.pokemc.pokemon.EntityPikachu;
+import uk.pokemc.pokemon.ModelPikachu;
+import uk.pokemc.pokemon.RenderPikachu;
 import uk.pokemc.recipes.PokemcCrafter;
 import uk.pokemc.server.ServerEventListener;
 
@@ -19,7 +29,7 @@ public class PokemcMod {
 	public static final String MODVER = "0.0.1-alpha";
 	
 	@Instance
-	public static PokemcMod INSTANCE = new PokemcMod();
+	public static PokemcMod instance = new PokemcMod();
     
 	@SidedProxy(clientSide="uk.pokemc.client.ClientProxy", serverSide="uk.pokemc.server.ServerProxy")
 	public static BasicProxy proxy;

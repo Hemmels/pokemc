@@ -1,0 +1,12 @@
+[{
+  "modid": "pokemc",
+  "name": "Pokemon Go for Minecraft",
+  "description": "Pokemon Go for Minecraft as made by us",
+  "version": 1.0,
+  "mcversion": 1.10.2,
+  "logoFile": "assets/pokemc/textures/items/pikachu_face.png",
+  "url": "minecraftforge.net/",
+  "updateJSON": "minecraftforge.net/versions.json",
+  "authorList": ["Hemmels", "lamboona"],
+  "credits": "Thanks for all the fish."
+}]
