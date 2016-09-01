@@ -43,6 +43,7 @@ public class ServerEventListener {
 			
 			if (!e.getEntity().getEntityWorld().isRemote){
 				newPika = new EntityPikachu(e.getEntity().getEntityWorld());
+				newPika.init();
 				System.out.println(newPika.getName() + " is a id " + newPika.getEntityId() + " and uuid " + newPika.getUniqueID());
 				pos = e.getEntity().getPosition();
 				newPika.setPosition(pos.getX() + 2, pos.getY() + 1, pos.getZ() + 4);

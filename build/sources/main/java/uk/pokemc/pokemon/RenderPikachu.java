@@ -31,7 +31,6 @@ public class RenderPikachu extends RenderLiving<EntityPikachu> {
 	@Override
 	protected ResourceLocation getEntityTexture(EntityPikachu entity) {
 		// TODO Auto-generated method stub
-		System.out.println("Pikachu textures got from " + PIKACHU_TEXTURES.getResourcePath());
 		return PIKACHU_TEXTURES;
 	}
 	@Override

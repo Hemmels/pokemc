@@ -30,14 +30,19 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
+import uk.pokemc.pokemon.entities.EntityPikachu;
 
 public class EntityPokemon extends EntityCreature {
 
 	protected static final DataParameter<Byte> TAMED = EntityDataManager.<Byte>createKey(EntityTameable.class, DataSerializers.BYTE);
 	public static DamageSource INTERPOKEMON = new DamageSource("interPokemon");
-    private static final DataParameter<Boolean> DATA_FLYING =
-            EntityDataManager.<Boolean>createKey(EntityPokemon.class, DataSerializers.BOOLEAN);
-    protected static final DataParameter<Optional<UUID>> OWNER_UNIQUE_ID = EntityDataManager.<Optional<UUID>>createKey(EntityTameable.class, DataSerializers.OPTIONAL_UNIQUE_ID);
+
+    protected static final DataParameter<Byte> TYPE = EntityDataManager.<Byte>createKey(
+    		EntityPokemon.class, DataSerializers.BYTE);
+	private static final DataParameter<Boolean> DATA_FLYING = EntityDataManager.<Boolean>createKey(
+			EntityPokemon.class, DataSerializers.BOOLEAN);
+    protected static final DataParameter<Optional<UUID>> OWNER_UNIQUE_ID = EntityDataManager.<Optional<UUID>>createKey(
+    		EntityTameable.class, DataSerializers.OPTIONAL_UNIQUE_ID);
     
     public static final double BASE_SPEED_GROUND = 0.3;
     public static final double BASE_SPEED_AIR = 0.4;
@@ -55,7 +60,6 @@ public class EntityPokemon extends EntityCreature {
     
 	public EntityPokemon(World worldIn) {
 		super(worldIn);
-		
         // enables walking over blocks
         stepHeight = 1;
         
