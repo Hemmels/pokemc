@@ -10,19 +10,19 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import uk.pokemc.pokemon.entities.EntityPikachu;
+import uk.pokemc.runtime.PokemcMod;
 
 @SideOnly(Side.CLIENT)
 public class RenderPikachu extends RenderLiving<EntityPikachu> {
 	
-    private static final ResourceLocation PIKACHU_TEXTURES = new ResourceLocation("textures/entity/pikachu.png");
+    public static final ResourceLocation PIKACHU_TEXTURES = new ResourceLocation(PokemcMod.MODID + ":textures/entity/pikachu.png");
 
     public RenderPikachu(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn){
     	super(renderManagerIn, modelBaseIn, shadowSizeIn);
-    	System.out.println("Attempt2 to call Pika renderer");
+    	System.out.println("Our renderer for RenderLiving<EntityPikachu> has been created");
     }
     public RenderPikachu(RenderManager renderManagerIn){
-    	super(renderManagerIn, null, 2);
-    	System.out.println("Attempt to call Pika renderer");
+    	super(renderManagerIn, new ModelPikachu(), 2);
     }
 
     /**
@@ -31,14 +31,14 @@ public class RenderPikachu extends RenderLiving<EntityPikachu> {
 	@Override
 	protected ResourceLocation getEntityTexture(EntityPikachu entity) {
 		// TODO Auto-generated method stub
+		System.out.println("Pikachu textures got from " + PIKACHU_TEXTURES.getResourcePath());
 		return PIKACHU_TEXTURES;
 	}
-
 	@Override
-	public boolean shouldRender(EntityPikachu livingEntity, ICamera camera, double camX, double camY, double camZ) {
+	protected boolean canRenderName(EntityPikachu p_canRenderName_1_) {
 		// TODO Auto-generated method stub
-		System.out.println("should render pikachus? " + super.shouldRender(livingEntity, camera, camX, camY, camZ));
-		return super.shouldRender(livingEntity, camera, camX, camY, camZ);
+		System.out.println("Name? : " + super.canRenderName(p_canRenderName_1_));
+		return super.canRenderName(p_canRenderName_1_);
 	}
 	
 }

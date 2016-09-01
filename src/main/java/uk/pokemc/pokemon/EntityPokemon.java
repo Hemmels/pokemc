@@ -1,7 +1,6 @@
 package uk.pokemc.pokemon;
 
 import static net.minecraft.entity.SharedMonsterAttributes.ATTACK_DAMAGE;
-import static net.minecraft.entity.SharedMonsterAttributes.FOLLOW_RANGE;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,11 +12,11 @@ import javax.annotation.Nullable;
 import com.google.common.base.Optional;
 
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityAgeable;
+import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.EntityList;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.IEntityLivingData;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.passive.EntityTameable;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -26,13 +25,13 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
-import net.minecraft.pathfinding.PathNavigateGround;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 
-public class EntityPokemon extends EntityAnimal {
+public class EntityPokemon extends EntityCreature {
 
 	protected static final DataParameter<Byte> TAMED = EntityDataManager.<Byte>createKey(EntityTameable.class, DataSerializers.BYTE);
 	public static DamageSource INTERPOKEMON = new DamageSource("interPokemon");
@@ -60,10 +59,10 @@ public class EntityPokemon extends EntityAnimal {
         // enables walking over blocks
         stepHeight = 1;
         
-        helpers.put(PokemonInteractHelper.class.getName(), new PokemonInteractHelper(this));
+        //helpers.put(PokemonInteractHelper.class.getName(), new PokemonInteractHelper(this));
         
         // init helpers
-        helpers.values().forEach(PokemonHelper::applyEntityAttributes);
+        //helpers.values().forEach(PokemonHelper::applyEntityAttributes);
 	}
 	
 	@Override
@@ -193,48 +192,6 @@ public class EntityPokemon extends EntityAnimal {
     public boolean isOwner(EntityLivingBase entityIn)
     {
         return entityIn == this.getOwner();
-    }
-    
-    @Override
-    public void onLivingUpdate() {
-        helpers.values().forEach(PokemonHelper::onLivingUpdate);
-        
-        if (isServer()) {
-            // set home position near owner when tamed
-            if (isTamed()) {
-                Entity owner = getOwner();
-                if (owner != null) {
-                    setHomePosAndDistance(owner.getPosition(), HOME_RADIUS);
-                }
-            }
-
-            // update flying state based on the distance to the ground
-            boolean flying = canFly() && getAltitude() > ALTITUDE_FLYING_THRESHOLD;
-            if (flying != isFlying()) {
-                // notify client
-                setFlying(flying);
-                
-                // clear tasks (needs to be done before switching the navigator!)
-//                getBrain().clearTasks();
-                
-                // update AI follow range (needs to be updated before creating 
-                // new PathNavigate!)
-                getEntityAttribute(FOLLOW_RANGE).setBaseValue(
-                        flying ? BASE_FOLLOW_RANGE_FLYING : BASE_FOLLOW_RANGE);
-                
-                // update pathfinding method
-//                if (flying) {
-//                    navigator = new PathNavigateFlying(this, worldObj);
-//                } else {
-                    navigator = new PathNavigateGround(this, worldObj);
-//                }
-                
-                // tasks need to be updated after switching modes
-//                getBrain().updateAITasks();
-            }
-        }
-        
-        super.onLivingUpdate();
     }
     
     @Override
@@ -488,8 +445,6 @@ public class EntityPokemon extends EntityAnimal {
         double posZTmp = posZ;
         boolean onGroundTmp = onGround;
         
-        setScale(scale);
-        
         // workaround for a vanilla bug; the position is apparently not set correcty
         // after changing the entity size, causing asynchronous server/client positioning
         setPosition(posXTmp, posYTmp, posZTmp);
@@ -524,8 +479,10 @@ public class EntityPokemon extends EntityAnimal {
     }
 
 	@Override
-	public EntityAgeable createChild(EntityAgeable ageable) {
+	public IEntityLivingData onInitialSpawn(DifficultyInstance p_onInitialSpawn_1_,
+			IEntityLivingData p_onInitialSpawn_2_) {
 		// TODO Auto-generated method stub
-		return null;
+    	System.out.println(getEntityId() + " was added to the world! - it's a " + getName());
+		return super.onInitialSpawn(p_onInitialSpawn_1_, p_onInitialSpawn_2_);
 	}
 }

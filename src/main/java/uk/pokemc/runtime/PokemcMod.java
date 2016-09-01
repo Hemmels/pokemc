@@ -29,6 +29,7 @@ public class PokemcMod {
 		proxy.preInit(e);
 		System.out.println(MODID + " (" + MODVER + ") is loading!");
 		PokemcBlocks.init();
+		PokemonRegister.registerPokemon();
 		PokemcCrafter.addRecipes();
 		MinecraftForge.EVENT_BUS.register(new ClientEventListener());
 		MinecraftForge.EVENT_BUS.register(new ServerEventListener());

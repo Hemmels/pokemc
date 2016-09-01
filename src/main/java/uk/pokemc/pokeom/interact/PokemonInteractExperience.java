@@ -16,9 +16,9 @@ public class PokemonInteractExperience extends PokemonInteraction{
     public boolean interact(EntityPlayer player, ItemStack item) {
 //        if (pokemon.isServer() && pokemon.isTamedFor(player) &&
 //                ItemUtils.hasEquipped(player, Items.BONE)) {
-    		doExperienceUpOrSomething();
-            return true;
-        }
+		doExperienceUpOrSomething();
+        return false;
+    }
 
 	private void doExperienceUpOrSomething() {
 		

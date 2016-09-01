@@ -1,5 +1,6 @@
 package uk.pokemc.server;
 
+import net.minecraft.entity.EntityList;
 import net.minecraft.entity.passive.EntityCow;
 import net.minecraft.entity.passive.EntityRabbit;
 import net.minecraft.entity.player.EntityPlayer;
@@ -31,19 +32,23 @@ public class ServerEventListener {
 	@SideOnly(Side.SERVER)
 	@SubscribeEvent(priority = EventPriority.NORMAL)
     public void onPlayerJumpEvent(LivingJumpEvent e) {
+		EntityPikachu newPika;
 		if (e.getEntity() instanceof EntityPlayer){
-//			EntityRabbit newCow = new EntityRabbit(e.getEntity().getEntityWorld());
+			// Cows work.
+//			EntityCow newCow = new EntityCow(e.getEntity().getEntityWorld());
 			BlockPos pos = e.getEntity().getPosition();
 //			newCow.setPosition(pos.getX(), pos.getY() + 1, pos.getZ() + 1);
 //			e.getEntity().getEntityWorld().spawnEntityInWorld(newCow);
 //			newCow.playLivingSound();
 			
-			EntityPikachu newPika = new EntityPikachu(e.getEntity().getEntityWorld());
-			System.out.println("Pika is a id " + newPika.getEntityId() + " and uuid " + newPika.getUniqueID());
-			pos = e.getEntity().getPosition();
-			newPika.setPosition(pos.getX() + 2, pos.getY() + 1, pos.getZ() + 4);
-			e.getEntity().getEntityWorld().spawnEntityInWorld(newPika);
-			newPika.playLivingSound();
+			if (!e.getEntity().getEntityWorld().isRemote){
+				newPika = new EntityPikachu(e.getEntity().getEntityWorld());
+				System.out.println(newPika.getName() + " is a id " + newPika.getEntityId() + " and uuid " + newPika.getUniqueID());
+				pos = e.getEntity().getPosition();
+				newPika.setPosition(pos.getX() + 2, pos.getY() + 1, pos.getZ() + 4);
+				e.getEntity().getEntityWorld().spawnEntityInWorld(newPika);
+				newPika.playLivingSound();
+			}
 		}
 	}
 }

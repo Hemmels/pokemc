@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public abstract class BasicProxy {
 
+	// Both client and server need this information
 	public abstract void preInit(FMLPreInitializationEvent e);
 
 	public abstract void init(FMLInitializationEvent e);

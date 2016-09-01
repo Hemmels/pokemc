@@ -7,11 +7,10 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public abstract class BasicProxy {
 
+	// Both client and server need this information
 	public abstract void preInit(FMLPreInitializationEvent e);
 
-	public void init(FMLInitializationEvent e){
-		PokemonRegister.registerPokemon();
-	}
+	public abstract void init(FMLInitializationEvent e);
 
 	public abstract void postInit(FMLPostInitializationEvent e);
 	
