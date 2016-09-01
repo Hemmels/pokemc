@@ -34,8 +34,6 @@ public class EntityPikachu extends EntityPokemon
 	// No shorts used in Forge/MC - Use Integer instead
     private static final DataParameter<Integer> ID = EntityDataManager.<Integer>createKey(
     		EntityPikachu.class, DataSerializers.VARINT);
-    private static final DataParameter<Byte> TYPE = EntityDataManager.<Byte>createKey(
-    		EntityPikachu.class, DataSerializers.BYTE);
 
     public static final int ENTITY_ID = 254;//MathHelper.getRandomUUID().hashCode();
     
@@ -46,8 +44,12 @@ public class EntityPikachu extends EntityPokemon
         this.setCanPickUpLoot(false);
         this.setHealth(10);
         // TODO: Reserve and use IDs 1000+ for each pokemon?
-        this.setSize(0.5F, 0.5F);
-//        this.dataManager.set(TYPE, Byte.valueOf((byte)(1)));
+//        this.setSize(0.5F, 0.5F);
+    }
+    
+    public void init(){
+		this.dataManager.register(TYPE, Byte.valueOf((byte)(1)));
+        this.dataManager.set(TYPE, Byte.valueOf((byte)(1)));
     }
 
     /**
@@ -136,7 +138,6 @@ public class EntityPikachu extends EntityPokemon
      */
     public void writeEntityToNBT(NBTTagCompound compound)
     {
-        super.writeEntityToNBT(compound);
         compound.setByte("PokemcFlags", ((Byte)this.dataManager.get(TYPE)).byteValue());
     }
 
