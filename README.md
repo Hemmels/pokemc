@@ -4,6 +4,8 @@ To build from a clone of this repo, simply run
 
 gradlew setupDecompWorkspace --refresh-dependencies
 
+(setupDevWorkspace can be used, but then you won't decompile the JAR source files, which kinda sucks)
+
 then
 
 gradlew eclipse
