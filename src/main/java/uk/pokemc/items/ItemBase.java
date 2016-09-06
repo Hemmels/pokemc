@@ -6,24 +6,33 @@ import uk.pokemc.runtime.PokemcMod;
 
 public class ItemBase extends Item {
 
-	// Must be the name of the <model>.json
-	protected String name;
+  // Must be the name of the <model>.json
+  protected String name;
+  protected boolean entity;
 
-	public ItemBase(String name) {
-		this.name = name;
-		setUnlocalizedName(name);
-		setRegistryName(name);
-	}
+  public ItemBase(String name, boolean entity) {
+    this.name = name;
+    setUnlocalizedName(name);
+    setRegistryName(name);
+    setEntity(entity);
+  }
 
-	public void registerItemModel() {
-		PokemcMod.proxy.registerItemRenderer(this, 0, name);
-	}
+  private void setEntity(boolean entity) {
+    this.entity = entity;
+  }
 
-	@Override
-	public ItemBase setCreativeTab(CreativeTabs tab) {
-		super.setCreativeTab(tab);
-		return this;
-	}
+  public boolean getEntity() {
+    return entity;
+  }
+
+  public void registerItemModel(boolean entityRender) {
+    PokemcMod.proxy.registerItemRenderer(this, 0, name);
+  }
+
+  @Override
+  public ItemBase setCreativeTab(CreativeTabs tab) {
+    super.setCreativeTab(tab);
+    return this;
+  }
 
 }
-

@@ -2,6 +2,11 @@ package uk.pokemc.pokemon;
 
 import static net.minecraft.entity.SharedMonsterAttributes.ATTACK_DAMAGE;
 
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -10,7 +15,13 @@ import java.util.UUID;
 import javax.annotation.Nullable;
 
 import com.google.common.base.Optional;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
+import net.minecraft.client.model.ModelBase;
+import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.EntityList;
@@ -30,6 +41,8 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
+import uk.pokemc.items.ItemBase;
+import uk.pokemc.json.Block;
 import uk.pokemc.pokemon.entities.EntityPikachu;
 
 public class EntityPokemon extends EntityCreature {
@@ -276,8 +289,8 @@ public class EntityPokemon extends EntityCreature {
         if (super.processInteract(player, hand, item)) {
             return true;
         }
-        
-        return getInteractHelper().interact(player, item);
+        return false;
+        //return getInteractHelper().interact(player, item);
     }
     
     public void tamedFor(EntityPlayer player, boolean successful) {       
@@ -489,4 +502,5 @@ public class EntityPokemon extends EntityCreature {
     	System.out.println(getEntityId() + " was added to the world! - it's a " + getName());
 		return super.onInitialSpawn(p_onInitialSpawn_1_, p_onInitialSpawn_2_);
 	}
+	
 }

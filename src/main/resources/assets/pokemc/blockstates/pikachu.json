@@ -2,10 +2,10 @@
 	"forge_marker": 1,
 	"variants": {
 		"normal": {
-			"model": "pokemc:pikachu"
+			"model": "pokemc:models/entity/pikachu"
 		},
 		"inventory": {
-			"model": "pokemc:pikachu"
+			"model": "pokemc:models/entity/pikachu"
 		}
 	}
 }

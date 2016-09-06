@@ -10,10 +10,11 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import uk.pokemc.pokemon.RenderPikachu;
 import uk.pokemc.pokemon.entities.EntityPikachu;
+import uk.pokemc.pokemon.entities.RenderPikachu;
 import uk.pokemc.runtime.BasicProxy;
 import uk.pokemc.runtime.PokemcMod;
+import uk.pokemc.runtime.PokemonRegister;
 
 @SideOnly(Side.CLIENT)
 public class ClientProxy extends BasicProxy{
@@ -26,12 +27,9 @@ public class ClientProxy extends BasicProxy{
 			normalSpawnList[i] = Biome.getBiome(i);
 		}
 
-		// CLient should pre-register the Pikachu Renderer
-        RenderingRegistry.registerEntityRenderingHandler(EntityPikachu.class, RenderPikachu::new);
-//        ModelResourceLocation pikachuModelLoc = new ModelResourceLocation(PokemcMod.MODID + ":entities/pikachu");
-//        Item pickachuModel = Item.REGISTRY.getObject(pikachuModelLoc);
-        //ModelLoader.setCustomModelResourceLocation(pickachuModel, 0, pikachuModelLoc);
-		
+		// CLient should register the Pikachu Renderer
+		ModelLoader.setCustomMeshDefinition(PokemonRegister.POK_PIKACHU, stack -> RenderPikachu.PIKACHU_MODEL);
+		RenderingRegistry.registerEntityRenderingHandler(EntityPikachu.class, RenderPikachu::new);
 	}
 
 	@Override
