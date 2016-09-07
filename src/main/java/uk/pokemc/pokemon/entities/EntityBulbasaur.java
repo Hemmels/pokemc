@@ -25,14 +25,14 @@ import net.minecraft.world.storage.loot.LootTableList;
 import uk.pokemc.pokemon.EntityPokemon;
 import uk.pokemc.runtime.PokemcMod;
 
-public class EntityPikachu extends EntityPokemon {
+public class EntityBulbasaur extends EntityPokemon {
   // No shorts used in Forge/MC - Use Integer instead
-
-  public static final short POKEID = 25;
   
-  public EntityPikachu(World worldIn) {
+  public static final short POKEID = 1;
+
+  public EntityBulbasaur(World worldIn) {
     super(worldIn);
-    this.setCustomNameTag("Pikachu");
+    this.setCustomNameTag("Bulbasaur");
     this.setCanPickUpLoot(false);
     this.setHealth(10);
     // TODO: Reserve and use IDs 1000+ for each pokemon?
@@ -59,17 +59,17 @@ public class EntityPikachu extends EntityPokemon {
   @Override
   @Nullable
   protected SoundEvent getAmbientSound() {
-    return SoundEvents.ENTITY_COW_AMBIENT;
+    return SoundEvents.ENTITY_SHEEP_AMBIENT;
   }
 
   @Override
   protected SoundEvent getHurtSound() {
-    return SoundEvents.ENTITY_COW_HURT;
+    return SoundEvents.ENTITY_SHEEP_HURT;
   }
 
   @Override
   protected SoundEvent getDeathSound() {
-    return SoundEvents.ENTITY_COW_DEATH;
+    return SoundEvents.ENTITY_SHEEP_DEATH;
   }
 
   /**
@@ -183,14 +183,14 @@ public class EntityPikachu extends EntityPokemon {
 
   @Override
   protected void playStepSound(BlockPos pos, Block blockIn) {
-    this.playSound(SoundEvents.ENTITY_COW_STEP, 0.15F, 1.0F);
+    this.playSound(SoundEvents.ENTITY_SHEEP_STEP, 0.15F, 1.0F);
   }
 
   @Override
   @Nullable
   protected ResourceLocation getLootTable() {
     ResourceLocation loc = LootTableList
-        .register(new ResourceLocation(PokemcMod.MODID, "entities/pikachu"));
+        .register(new ResourceLocation(PokemcMod.MODID, "entities/bulbasaur"));
     return loc;
   }
 

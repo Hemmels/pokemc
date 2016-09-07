@@ -32,7 +32,7 @@ import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
 import uk.pokemc.pokemon.entities.EntityPikachu;
 
-public class EntityPokemon extends EntityCreature {
+public abstract class EntityPokemon extends EntityCreature {
 
   protected static final DataParameter<Byte> TAMED = EntityDataManager
       .<Byte>createKey(EntityTameable.class, DataSerializers.BYTE);
@@ -44,9 +44,6 @@ public class EntityPokemon extends EntityCreature {
       .<Boolean>createKey(EntityPokemon.class, DataSerializers.BOOLEAN);
   protected static final DataParameter<Optional<UUID>> OWNER_UNIQUE_ID = EntityDataManager
       .<Optional<UUID>>createKey(EntityTameable.class, DataSerializers.OPTIONAL_UNIQUE_ID);
-  // TODO: Can we keep "variant" of pokemon here?
-  private static final DataParameter<Byte> ID = EntityDataManager
-      .<Byte>createKey(EntityPikachu.class, DataSerializers.BYTE);
 
   public static final double BASE_SPEED_GROUND = 0.3;
   public static final double BASE_SPEED_AIR = 0.4;

@@ -9,28 +9,28 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import uk.pokemc.runtime.BasicProxy;
 
 @SideOnly(Side.SERVER)
-public class ServerProxy extends BasicProxy{
-	
-	public ServerProxy(){
-		System.out.println("serverproxy constructed!");
-	}
+public class ServerProxy extends BasicProxy {
 
-	@Override
-	public void preInit(FMLPreInitializationEvent e) {
-		
-	}
+  public ServerProxy() {
+    System.out.println("serverproxy constructed!");
+  }
 
-	@Override
-	public void init(FMLInitializationEvent e) {
-	}
+  @Override
+  public void preInit(FMLPreInitializationEvent e) {
 
-	@Override
-	public void postInit(FMLPostInitializationEvent e) {
-	}
+  }
 
-	@Override
-	public void registerItemRenderer(Item item, int meta, String id) {
-		
-	}
+  @Override
+  public void init(FMLInitializationEvent e) {
+  }
+
+  @Override
+  public void postInit(FMLPostInitializationEvent e) {
+  }
+
+  @Override
+  public void registerItemRenderer(Item item, int meta, String id) {
+
+  }
 
 }

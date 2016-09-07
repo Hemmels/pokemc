@@ -10,7 +10,9 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import uk.pokemc.pokemon.entities.EntityBulbasaur;
 import uk.pokemc.pokemon.entities.EntityPikachu;
+import uk.pokemc.pokemon.entities.RenderBulbasaur;
 import uk.pokemc.pokemon.entities.RenderPikachu;
 import uk.pokemc.runtime.BasicProxy;
 import uk.pokemc.runtime.PokemcMod;
@@ -30,7 +32,10 @@ public class ClientProxy extends BasicProxy {
     // CLient should register the Pikachu Renderer
     ModelLoader.setCustomMeshDefinition(PokemonRegister.POK_PIKACHU,
         stack -> RenderPikachu.PIKACHU_MODEL);
+    ModelLoader.setCustomMeshDefinition(PokemonRegister.POK_BULBASAUR, 
+        stack -> RenderBulbasaur.BULBASAUR_MODEL);
     RenderingRegistry.registerEntityRenderingHandler(EntityPikachu.class, RenderPikachu::new);
+    RenderingRegistry.registerEntityRenderingHandler(EntityBulbasaur.class, RenderBulbasaur::new);
   }
 
   @Override

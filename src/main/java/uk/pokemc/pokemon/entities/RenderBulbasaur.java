@@ -10,19 +10,19 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import uk.pokemc.runtime.PokemcMod;
 
 @SideOnly(Side.CLIENT)
-public class RenderPikachu extends RenderLiving<EntityPikachu> {
+public class RenderBulbasaur extends RenderLiving<EntityBulbasaur> {
 
-  public static final ResourceLocation PIKACHU_TEXTURES = new ResourceLocation(
-      PokemcMod.MODID + ":textures/entity/pikachu.png");
-  public static final ModelResourceLocation PIKACHU_MODEL = new ModelResourceLocation(
-      PokemcMod.MODID + ":models/entity/pikachu.json");
+  public static final ResourceLocation BULBASAUR_TEXTURES = new ResourceLocation(
+      PokemcMod.MODID + ":textures/entity/bulbasaur.png");
+  public static final ModelResourceLocation BULBASAUR_MODEL = new ModelResourceLocation(
+      PokemcMod.MODID + ":models/entity/bulbasaur.json");
 
-  public RenderPikachu(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn) {
+  public RenderBulbasaur(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn) {
     super(renderManagerIn, modelBaseIn, shadowSizeIn);
   }
 
-  public RenderPikachu(RenderManager renderManagerIn) {
-    super(renderManagerIn, new ModelPokemon(ModelPokemon.PIKACHU), 1f);
+  public RenderBulbasaur(RenderManager renderManagerIn) {
+    super(renderManagerIn, new ModelPokemon(ModelPokemon.BULBASAUR), 1f);
   }
 
   /**
@@ -30,9 +30,9 @@ public class RenderPikachu extends RenderLiving<EntityPikachu> {
    * Render.bindEntityTexture.
    */
   @Override
-  protected ResourceLocation getEntityTexture(EntityPikachu entity) {
+  protected ResourceLocation getEntityTexture(EntityBulbasaur entity) {
     // TODO Auto-generated method stub
-    return PIKACHU_TEXTURES;
+    return BULBASAUR_TEXTURES;
   }
 
 }

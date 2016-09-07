@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import uk.pokemc.pokemon.entities.EntityBulbasaur;
 import uk.pokemc.pokemon.entities.EntityPikachu;
 
 /**
@@ -27,23 +28,21 @@ public class ServerEventListener {
   @SideOnly(Side.SERVER)
   @SubscribeEvent(priority = EventPriority.NORMAL)
   public void onPlayerJumpEvent(LivingJumpEvent e) {
+    EntityBulbasaur newBulba;
     EntityPikachu newPika;
     if (e.getEntity() instanceof EntityPlayer) {
-      // Cows work.
-      // EntityCow newCow = new EntityCow(e.getEntity().getEntityWorld());
       BlockPos pos = e.getEntity().getPosition();
-      // newCow.setPosition(pos.getX(), pos.getY() + 1, pos.getZ() + 1);
-      // e.getEntity().getEntityWorld().spawnEntityInWorld(newCow);
-      // newCow.playLivingSound();
 
       if (!e.getEntity().getEntityWorld().isRemote) {
         newPika = new EntityPikachu(e.getEntity().getEntityWorld());
-        System.out.println(newPika.getName() + " is a id " + newPika.getEntityId() + " and uuid "
-            + newPika.getUniqueID());
-        pos = e.getEntity().getPosition();
         newPika.setPosition(pos.getX() + 2, pos.getY() + 1, pos.getZ() + 4);
         e.getEntity().getEntityWorld().spawnEntityInWorld(newPika);
         newPika.playLivingSound();
+
+        newBulba = new EntityBulbasaur(e.getEntity().getEntityWorld());
+        newBulba.setPosition(pos.getX() + 1, pos.getY() + 1, pos.getZ() - 2);
+        e.getEntity().getEntityWorld().spawnEntityInWorld(newBulba);
+        newBulba.playLivingSound();
       }
     }
   }
