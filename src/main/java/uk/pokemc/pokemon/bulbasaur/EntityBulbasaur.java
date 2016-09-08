@@ -28,188 +28,162 @@ import net.minecraft.world.storage.loot.LootTableList;
 import uk.pokemc.pokemon.EntityPokemon;
 import uk.pokemc.runtime.PokemcMod;
 
-public class EntityBulbasaur extends EntityPokemon
-{
+public class EntityBulbasaur extends EntityPokemon {
 	// No shorts used in Forge/MC - Use Integer instead
-    private static final DataParameter<Integer> ID = EntityDataManager.<Integer>createKey(
-    		EntityBulbasaur.class, DataSerializers.VARINT);
+	private static final DataParameter<Integer> ID = EntityDataManager.<Integer>createKey(EntityBulbasaur.class, DataSerializers.VARINT);
 
-    public static final int ENTITY_ID = 1001;//MathHelper.getRandomUUID().hashCode();
-    
-    public EntityBulbasaur(World worldIn)
-    {
-        super(worldIn);
-        this.setCustomNameTag("Bulbasaur");
-        this.setCanPickUpLoot(false);
-        this.setHealth(10);
-        // TODO: Reserve and use IDs 1000+ for each pokemon?
-//        this.setSize(0.5F, 0.5F);
-    }
-    
-    public void init(){
-		this.dataManager.register(TYPE, Byte.valueOf((byte)(1)));
-        this.dataManager.set(TYPE, Byte.valueOf((byte)(1)));
-    }
+	public static final int ENTITY_ID = 1001;// MathHelper.getRandomUUID().hashCode();
 
-    /**
-     * Returns the volume for the sounds this mob makes.
-     */
-    protected float getSoundVolume()
-    {
-        return 0.1F;
-    }
+	public EntityBulbasaur(World worldIn) {
+		super(worldIn);
+		this.setCustomNameTag("Bulbasaur");
+		this.setCanPickUpLoot(false);
+		this.setHealth(10);
+		// TODO: Reserve and use IDs 1000+ for each pokemon?
+		// this.setSize(0.5F, 0.5F);
+	}
 
-    /**
-     * Gets the pitch of living sounds in living entities.
-     */
-    protected float getSoundPitch()
-    {
-        return super.getSoundPitch() * 0.75F;
-    }
+	public void init() {
+		this.dataManager.register(TYPE, Byte.valueOf((byte) (1)));
+		this.dataManager.set(TYPE, Byte.valueOf((byte) (1)));
+	}
 
-    @Nullable
-    protected SoundEvent getAmbientSound()
-    {
-        return SoundEvents.ENTITY_COW_AMBIENT;
-    }
+	/**
+	 * Returns the volume for the sounds this mob makes.
+	 */
+	protected float getSoundVolume() {
+		return 0.1F;
+	}
 
-    protected SoundEvent getHurtSound()
-    {
-        return SoundEvents.ENTITY_COW_HURT;
-    }
+	/**
+	 * Gets the pitch of living sounds in living entities.
+	 */
+	protected float getSoundPitch() {
+		return super.getSoundPitch() * 0.75F;
+	}
 
-    protected SoundEvent getDeathSound()
-    {
-        return SoundEvents.ENTITY_COW_DEATH;
-    }
+	@Nullable
+	protected SoundEvent getAmbientSound() {
+		return SoundEvents.ENTITY_COW_AMBIENT;
+	}
 
-    /**
-     * Returns true if this entity should push and be pushed by other entities when colliding.
-     */
-    public boolean canBePushed()
-    {
-        return false;
-    }
+	protected SoundEvent getHurtSound() {
+		return SoundEvents.ENTITY_COW_HURT;
+	}
 
-    protected void collideWithEntity(Entity entityIn)
-    {
-    }
+	protected SoundEvent getDeathSound() {
+		return SoundEvents.ENTITY_COW_DEATH;
+	}
 
-    protected void collideWithNearbyEntities()
-    {
-    }
+	/**
+	 * Returns true if this entity should push and be pushed by other entities
+	 * when colliding.
+	 */
+	public boolean canBePushed() {
+		return false;
+	}
 
-    public Byte getPokemcType()
-    {
-        return ((Byte)this.dataManager.get(TYPE)).byteValue();
-    }
+	protected void collideWithEntity(Entity entityIn) {
+	}
 
-    /**
-     * Used for elemental pokemon types?
-     * TODO:
-     * @param type
-     */
-    public void setPokemcType(byte type)
-    {
-        byte b0 = ((Byte)this.dataManager.get(TYPE)).byteValue();
-        this.dataManager.set(TYPE, Byte.valueOf((byte)(b0 | 1)));
-    }
+	protected void collideWithNearbyEntities() {
+	}
 
-    /**
-     * Called when the entity is attacked.
-     */
-    public boolean attackEntityFrom(DamageSource source, float amount)
-    {
-        return isEntityInvulnerable(source);
-    }
+	public Byte getPokemcType() {
+		return ((Byte) this.dataManager.get(TYPE)).byteValue();
+	}
 
-    /**
-     * (abstract) Protected helper method to read subclass entity data from NBT.
-     */
-    public void readEntityFromNBT(NBTTagCompound compound)
-    {
-        super.readEntityFromNBT(compound);
-        this.dataManager.set(TYPE, Byte.valueOf(compound.getByte("PokemcFlags")));
-    }
+	/**
+	 * Used for elemental pokemon types? TODO:
+	 * 
+	 * @param type
+	 */
+	public void setPokemcType(byte type) {
+		byte b0 = ((Byte) this.dataManager.get(TYPE)).byteValue();
+		this.dataManager.set(TYPE, Byte.valueOf((byte) (b0 | 1)));
+	}
 
-    /**
-     * (abstract) Protected helper method to write subclass entity data to NBT.
-     */
-    public void writeEntityToNBT(NBTTagCompound compound)
-    {
-        compound.setByte("PokemcFlags", ((Byte)this.dataManager.get(TYPE)).byteValue());
-    }
+	/**
+	 * Called when the entity is attacked.
+	 */
+	public boolean attackEntityFrom(DamageSource source, float amount) {
+		return isEntityInvulnerable(source);
+	}
 
-    /**
-     * Checks if the entity's current position is a valid location to spawn this entity.
-     */
-    public boolean getCanSpawnHere()
-    {
-        BlockPos blockpos = new BlockPos(this.posX, this.getEntityBoundingBox().minY, this.posZ);
+	/**
+	 * (abstract) Protected helper method to read subclass entity data from NBT.
+	 */
+	public void readEntityFromNBT(NBTTagCompound compound) {
+		super.readEntityFromNBT(compound);
+		this.dataManager.set(TYPE, Byte.valueOf(compound.getByte("PokemcFlags")));
+	}
 
-        if (blockpos.getY() >= this.worldObj.getSeaLevel())
-        {
-            return false;
-        }
-        else
-        {
-            int i = this.worldObj.getLightFromNeighbors(blockpos);
-            int j = 4;
+	/**
+	 * (abstract) Protected helper method to write subclass entity data to NBT.
+	 */
+	public void writeEntityToNBT(NBTTagCompound compound) {
+		compound.setByte("PokemcFlags", ((Byte) this.dataManager.get(TYPE)).byteValue());
+	}
 
-            if (this.isDateAroundHalloween(this.worldObj.getCurrentDate()))
-            {
-                j = 7;
-            }
-            else if (this.rand.nextBoolean())
-            {
-                return false;
-            }
+	/**
+	 * Checks if the entity's current position is a valid location to spawn this
+	 * entity.
+	 */
+	public boolean getCanSpawnHere() {
+		BlockPos blockpos = new BlockPos(this.posX, this.getEntityBoundingBox().minY, this.posZ);
 
-            return i > this.rand.nextInt(j) ? false : super.getCanSpawnHere();
-        }
-    }
+		if (blockpos.getY() >= this.worldObj.getSeaLevel()) {
+			return false;
+		}
+		else {
+			int i = this.worldObj.getLightFromNeighbors(blockpos);
+			int j = 4;
 
-    private boolean isDateAroundHalloween(Calendar p_175569_1_)
-    {
-        return p_175569_1_.get(2) + 1 == 10 && p_175569_1_.get(5) >= 20 || p_175569_1_.get(2) + 1 == 11 && p_175569_1_.get(5) <= 3;
-    }
+			if (this.isDateAroundHalloween(this.worldObj.getCurrentDate())) {
+				j = 7;
+			}
+			else if (this.rand.nextBoolean()) {
+				return false;
+			}
 
-    public float getEyeHeight()
-    {
-        return this.height / 2.0F;
-    }
+			return i > this.rand.nextInt(j) ? false : super.getCanSpawnHere();
+		}
+	}
 
-    public static void registerFixesCow(DataFixer fixer)
-    {
-        EntityLiving.registerFixesMob(fixer, "Cow");
-    }
+	private boolean isDateAroundHalloween(Calendar p_175569_1_) {
+		return p_175569_1_.get(2) + 1 == 10 && p_175569_1_.get(5) >= 20 || p_175569_1_.get(2) + 1 == 11 && p_175569_1_.get(5) <= 3;
+	}
 
-    protected void initEntityAI()
-    {
-        this.tasks.addTask(0, new EntityAISwimming(this));
-        this.tasks.addTask(1, new EntityAIWander(this, 1.0D));
-        this.tasks.addTask(2, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
-        this.tasks.addTask(3, new EntityAILookIdle(this));
-    }
+	public float getEyeHeight() {
+		return this.height / 2.0F;
+	}
 
-    protected void applyEntityAttributes()
-    {
-        super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.30000000298023224D);
-    }
+	public static void registerFixesCow(DataFixer fixer) {
+		EntityLiving.registerFixesMob(fixer, "Cow");
+	}
 
-    protected void playStepSound(BlockPos pos, Block blockIn)
-    {
-        this.playSound(SoundEvents.ENTITY_COW_STEP, 0.15F, 1.0F);
-    }
+	protected void initEntityAI() {
+		this.tasks.addTask(0, new EntityAISwimming(this));
+		this.tasks.addTask(1, new EntityAIWander(this, 1.0D));
+		this.tasks.addTask(2, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
+		this.tasks.addTask(3, new EntityAILookIdle(this));
+	}
 
-    @Nullable
-    protected ResourceLocation getLootTable()
-    {
-    	ResourceLocation loc = LootTableList.register(new ResourceLocation(PokemcMod.MODID, "entities/pikachu"));
-        return loc;
-    }
+	protected void applyEntityAttributes() {
+		super.applyEntityAttributes();
+		this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10.0D);
+		this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.30000000298023224D);
+	}
+
+	protected void playStepSound(BlockPos pos, Block blockIn) {
+		this.playSound(SoundEvents.ENTITY_COW_STEP, 0.15F, 1.0F);
+	}
+
+	@Nullable
+	protected ResourceLocation getLootTable() {
+		ResourceLocation loc = LootTableList.register(new ResourceLocation(PokemcMod.MODID, "entities/pikachu"));
+		return loc;
+	}
 
 	@Override
 	public void onEntityUpdate() {
@@ -220,6 +194,5 @@ public class EntityBulbasaur extends EntityPokemon
 	public void onUpdate() {
 		super.onUpdate();
 	}
-    
-    
+
 }

@@ -20,17 +20,17 @@ import net.minecraft.world.World;
  */
 public class PathNavigateFlying extends PathNavigateSwimmer {
 
-  public PathNavigateFlying(EntityLiving entitylivingIn, World worldIn) {
-    super(entitylivingIn, worldIn);
-  }
+	public PathNavigateFlying(EntityLiving entitylivingIn, World worldIn) {
+		super(entitylivingIn, worldIn);
+	}
 
-  @Override
-  protected PathFinder getPathFinder() {
-    return new PathFinder(new NodeProcessorFlying());
-  }
+	@Override
+	protected PathFinder getPathFinder() {
+		return new PathFinder(new NodeProcessorFlying());
+	}
 
-  @Override
-  protected boolean canNavigate() {
-    return !isInLiquid();
-  }
+	@Override
+	protected boolean canNavigate() {
+		return !isInLiquid();
+	}
 }

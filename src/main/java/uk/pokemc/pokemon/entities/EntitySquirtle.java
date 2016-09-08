@@ -5,6 +5,7 @@ import java.util.Calendar;
 import javax.annotation.Nullable;
 
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -25,14 +26,14 @@ import net.minecraft.world.storage.loot.LootTableList;
 import uk.pokemc.pokemon.EntityPokemon;
 import uk.pokemc.runtime.PokemcMod;
 
-public class EntityBulbasaur extends EntityPokemon {
+public class EntitySquirtle extends EntityPokemon {
 	// No shorts used in Forge/MC - Use Integer instead
 
-	public static final short POKEID = 1;
+	public static final short POKEID = 2;
 
-	public EntityBulbasaur(World worldIn) {
+	public EntitySquirtle(World worldIn) {
 		super(worldIn);
-		this.setCustomNameTag("Bulbasaur");
+		this.setCustomNameTag("Squirtle");
 		this.setCanPickUpLoot(false);
 		this.setHealth(10);
 		// TODO: Reserve and use IDs 1000+ for each pokemon?
@@ -59,17 +60,17 @@ public class EntityBulbasaur extends EntityPokemon {
 	@Override
 	@Nullable
 	protected SoundEvent getAmbientSound() {
-		return SoundEvents.ENTITY_SHEEP_AMBIENT;
+		return SoundEvents.ENTITY_CHICKEN_AMBIENT;
 	}
 
 	@Override
 	protected SoundEvent getHurtSound() {
-		return SoundEvents.ENTITY_SHEEP_HURT;
+		return SoundEvents.ENTITY_CHICKEN_HURT;
 	}
 
 	@Override
 	protected SoundEvent getDeathSound() {
-		return SoundEvents.ENTITY_SHEEP_DEATH;
+		return SoundEvents.ENTITY_CHICKEN_DEATH;
 	}
 
 	/**
@@ -164,7 +165,7 @@ public class EntityBulbasaur extends EntityPokemon {
 	}
 
 	public static void registerFixesCow(DataFixer fixer) {
-		EntityLiving.registerFixesMob(fixer, "Cow");
+		EntityLiving.registerFixesMob(fixer, "Chicken");
 	}
 
 	@Override
@@ -184,13 +185,13 @@ public class EntityBulbasaur extends EntityPokemon {
 
 	@Override
 	protected void playStepSound(BlockPos pos, Block blockIn) {
-		this.playSound(SoundEvents.ENTITY_SHEEP_STEP, 0.15F, 1.0F);
+		this.playSound(SoundEvents.ENTITY_CHICKEN_STEP, 0.15F, 1.0F);
 	}
 
 	@Override
 	@Nullable
 	protected ResourceLocation getLootTable() {
-		ResourceLocation loc = LootTableList.register(new ResourceLocation(PokemcMod.MODID, "entities/bulbasaur"));
+		ResourceLocation loc = LootTableList.register(new ResourceLocation(PokemcMod.MODID, "entities/pikachu"));
 		return loc;
 	}
 

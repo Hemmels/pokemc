@@ -8,31 +8,31 @@ import uk.pokemc.runtime.PokemcMod;
 
 public class BlockBase extends Block {
 
-  protected String name;
+	protected String name;
 
-  /**
-   * Used to create a BLock, with a registered name and renderer.
-   * 
-   * @param material
-   * @param name
-   */
-  public BlockBase(Material material, String name) {
-    super(material);
+	/**
+	 * Used to create a BLock, with a registered name and renderer.
+	 * 
+	 * @param material
+	 * @param name
+	 */
+	public BlockBase(Material material, String name) {
+		super(material);
 
-    this.name = name;
+		this.name = name;
 
-    setUnlocalizedName(name);
-    setRegistryName(name);
-  }
+		setUnlocalizedName(name);
+		setRegistryName(name);
+	}
 
-  public void registerItemModel(ItemBlock itemBlock) {
-    PokemcMod.proxy.registerItemRenderer(itemBlock, 0, name);
-  }
+	public void registerItemModel(ItemBlock itemBlock) {
+		PokemcMod.proxy.registerItemRenderer(itemBlock, 0, name);
+	}
 
-  @Override
-  public BlockBase setCreativeTab(CreativeTabs tab) {
-    super.setCreativeTab(tab);
-    return this;
-  }
+	@Override
+	public BlockBase setCreativeTab(CreativeTabs tab) {
+		super.setCreativeTab(tab);
+		return this;
+	}
 
 }

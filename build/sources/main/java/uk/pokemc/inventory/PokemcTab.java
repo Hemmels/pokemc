@@ -9,20 +9,20 @@ import uk.pokemc.runtime.PokemcMod;
 
 public class PokemcTab extends CreativeTabs {
 
-  public static final CreativeTabs POKEMON = new PokemcTab();
+	public static final CreativeTabs POKEMON = new PokemcTab();
 
-  private PokemcTab() {
-    super(PokemcMod.MODID);
-  }
+	private PokemcTab() {
+		super(PokemcMod.MODID);
+	}
 
-  public static CreativeTabs getInstance() {
-    return POKEMON;
-  }
+	public static CreativeTabs getInstance() {
+		return POKEMON;
+	}
 
-  @Override
-  @SideOnly(Side.CLIENT)
-  public Item getTabIconItem() {
-    return PokemcItems.PIKACHU;
-  }
+	@Override
+	@SideOnly(Side.CLIENT)
+	public Item getTabIconItem() {
+		return PokemcItems.PIKACHU;
+	}
 
 }

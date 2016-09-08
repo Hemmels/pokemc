@@ -10,19 +10,17 @@ import uk.pokemc.runtime.PokemcMod;
 
 @SideOnly(Side.CLIENT)
 public class RenderBulbasaur extends RenderLiving<EntityBulbasaur> {
-	
-    public static final ResourceLocation BULBASAUR_TEXTURES = new ResourceLocation(PokemcMod.MODID + ":textures/entity/bulbasaur.png");
 
-    public RenderBulbasaur(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn){
-    	super(renderManagerIn, modelBaseIn, shadowSizeIn);
-    }
-    public RenderBulbasaur(RenderManager renderManagerIn){
-    	super(renderManagerIn, new ModelBulbasaur(), 1);
-    }
+	public static final ResourceLocation BULBASAUR_TEXTURES = new ResourceLocation(PokemcMod.MODID + ":textures/entity/bulbasaur.png");
 
-    /**
-     * Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
-     */
+	public RenderBulbasaur(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn) {
+		super(renderManagerIn, modelBaseIn, shadowSizeIn);
+	}
+
+	public RenderBulbasaur(RenderManager renderManagerIn) {
+		super(renderManagerIn, new ModelBulbasaur(), 0.2f);
+	}
+
 	@Override
 	protected ResourceLocation getEntityTexture(EntityBulbasaur entity) {
 		// TODO Auto-generated method stub

@@ -24,43 +24,43 @@ public class ModelPikachu extends ModelBase{
     public ModelRenderer right_ear;
 
     public ModelPikachu(){
-        this.main_body = new ModelRenderer(this, 32, 32);
+        this.main_body = new ModelRenderer(this, 10, 0);
         this.main_body.addBox(-1.5F, 16.0F, -1.5F, 3, 6, 3);
         
 
-        this.head = new ModelRenderer(this, 2, 2);
+        this.head = new ModelRenderer(this, 0, 0);
         this.head.addBox(-1F, 14F, -1F, 2, 2, 2);
         
 //
 //        // TODO: Where to start in the flat file?
-        this.tail_1 = new ModelRenderer(this, 0, 0);
+        this.tail_1 = new ModelRenderer(this, 0, 15);
         this.tail_1.addBox(-0.5F, 21.0F, 1.5F, 1, 1, 2);
 //        
-        this.tail_2 = new ModelRenderer(this, 0, 0);
+        this.tail_2 = new ModelRenderer(this, 10, 15);
         this.tail_2.addBox(-0.5F, 20F, 2.5F, 1, 1, 2);
 //        
-        this.tail_3 = new ModelRenderer(this, 0, 0);
+        this.tail_3 = new ModelRenderer(this, 0, 6);
         this.tail_3.addBox(-0.5F, 18F, 3.5F, 1, 2, 3);
 //                
-        this.tail_4 = new ModelRenderer(this, 0, 0);
+        this.tail_4 = new ModelRenderer(this, 0, 6);
         this.tail_4.addBox(-0.5F, 16F, 5.5F, 1, 2, 3);
 //        
-        this.left_leg = new ModelRenderer(this, 0, 0);
+        this.left_leg = new ModelRenderer(this, 0, 6);
         this.left_leg.addBox(-1.25F, 22.0F, -0.5F, 1, 1, 1);
 //        
-        this.right_leg = new ModelRenderer(this, 0, 0);
+        this.right_leg = new ModelRenderer(this, 0, 6);
         this.right_leg.addBox(0.25F, 22.0F, -0.5F, 1, 1, 1);
         
-        this.left_arm = new ModelRenderer(this, 0, 0);
+        this.left_arm = new ModelRenderer(this, 0, 6);
         this.left_arm.addBox(-3.0F, 17.0F, -0.5F, 2, 1, 1);
         
-        this.right_arm = new ModelRenderer(this, 0, 0);
+        this.right_arm = new ModelRenderer(this, 0, 6);
         this.right_arm.addBox(1.0F, 17.0F, -0.5F, 2, 1, 1);
         
-        this.left_ear = new ModelRenderer(this, 0, 0);
+        this.left_ear = new ModelRenderer(this, 25, 0);
         this.left_ear.addBox(-1.5F, 12.0F, -1.0F, 1, 2, 1);
         
-        this.right_ear = new ModelRenderer(this, 0, 0);
+        this.right_ear = new ModelRenderer(this, 25, 0);
         this.right_ear.addBox(0.5F, 12.0F, -1.0F, 1, 2, 1);
         //this.right_ear.rotateAngleX = -45F;
     }

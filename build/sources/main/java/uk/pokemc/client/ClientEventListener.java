@@ -7,9 +7,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ClientEventListener {
 
-  @SideOnly(Side.CLIENT)
-  @SubscribeEvent
-  public void playerJump(LivingJumpEvent e) {
-    // System.out.println("Weeeee!");
-  }
+	@SideOnly(Side.CLIENT)
+	@SubscribeEvent
+	public void playerJump(LivingJumpEvent e) {
+		// System.out.println("Weeeee!");
+	}
 }

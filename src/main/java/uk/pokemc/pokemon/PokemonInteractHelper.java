@@ -10,16 +10,16 @@ import uk.pokemc.pokeom.interact.PokemonInteraction;
 
 public class PokemonInteractHelper extends PokemonHelper {
 
-  private final List<PokemonInteraction> actions = new ArrayList<>();
+	private final List<PokemonInteraction> actions = new ArrayList<>();
 
-  public PokemonInteractHelper(EntityPokemon pokemon) {
-    super(pokemon);
+	public PokemonInteractHelper(EntityPokemon pokemon) {
+		super(pokemon);
 
-    actions.add(new PokemonInteractExperience(pokemon));
-  }
+		actions.add(new PokemonInteractExperience(pokemon));
+	}
 
-  public boolean interact(EntityPlayer player, ItemStack item) {
-    return actions.stream().anyMatch(action -> action.interact(player, item));
-  }
+	public boolean interact(EntityPlayer player, ItemStack item) {
+		return actions.stream().anyMatch(action -> action.interact(player, item));
+	}
 
 }

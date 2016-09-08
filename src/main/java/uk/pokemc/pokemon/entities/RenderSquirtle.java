@@ -11,17 +11,17 @@ import uk.pokemc.pokemon.bulbasaur.ModelBulbasaur;
 import uk.pokemc.runtime.PokemcMod;
 
 @SideOnly(Side.CLIENT)
-public class RenderBulbasaur extends RenderLiving<EntityBulbasaur> {
+public class RenderSquirtle extends RenderLiving<EntitySquirtle> {
 
-	public static final ResourceLocation BULBASAUR_TEXTURES = new ResourceLocation(PokemcMod.MODID + ":textures/entity/bulbasaur.png");
-	public static final ModelResourceLocation BULBASAUR_MODEL = new ModelResourceLocation(PokemcMod.MODID + ":models/entity/bulbasaur.json");
+	public static final ResourceLocation SQUIRTLE_TEXTURES = new ResourceLocation(PokemcMod.MODID + ":textures/entity/squirtle.png");
+	public static final ModelResourceLocation SQUIRTLE_MODEL = new ModelResourceLocation(PokemcMod.MODID + ":models/entity/squirtle.json");
 
-	public RenderBulbasaur(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn) {
+	public RenderSquirtle(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn) {
 		super(renderManagerIn, modelBaseIn, shadowSizeIn);
 	}
 
-	public RenderBulbasaur(RenderManager renderManagerIn) {
-		super(renderManagerIn, new ModelBulbasaur(), 1f);
+	public RenderSquirtle(RenderManager renderManagerIn) {
+		super(renderManagerIn, BDCraftModelPokemon.SQUIRTLE, 1f);
 	}
 
 	/**
@@ -29,9 +29,9 @@ public class RenderBulbasaur extends RenderLiving<EntityBulbasaur> {
 	 * unless you call Render.bindEntityTexture.
 	 */
 	@Override
-	protected ResourceLocation getEntityTexture(EntityBulbasaur entity) {
+	protected ResourceLocation getEntityTexture(EntitySquirtle entity) {
 		// TODO Auto-generated method stub
-		return BULBASAUR_TEXTURES;
+		return SQUIRTLE_TEXTURES;
 	}
 
 }

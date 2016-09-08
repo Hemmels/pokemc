@@ -5,25 +5,25 @@ import net.minecraft.creativetab.CreativeTabs;
 
 public class PokeBlock extends BlockBase {
 
-  String name;
+	String name;
 
-  @Deprecated
-  /**
-   * Unused, might need in future?
-   * 
-   * @param name
-   */
-  public PokeBlock(String name) {
-    super(Material.WOOD, name);
+	@Deprecated
+	/**
+	 * Unused, might need in future?
+	 * 
+	 * @param name
+	 */
+	public PokeBlock(String name) {
+		super(Material.WOOD, name);
 
-    setHardness(1f);
-    setResistance(1f);
-  }
+		setHardness(1f);
+		setResistance(1f);
+	}
 
-  @Override
-  public PokeBlock setCreativeTab(CreativeTabs tab) {
-    super.setCreativeTab(tab);
-    return this;
-  }
+	@Override
+	public PokeBlock setCreativeTab(CreativeTabs tab) {
+		super.setCreativeTab(tab);
+		return this;
+	}
 
 }

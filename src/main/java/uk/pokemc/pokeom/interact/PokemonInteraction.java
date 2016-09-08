@@ -6,11 +6,11 @@ import uk.pokemc.pokemon.EntityPokemon;
 
 public abstract class PokemonInteraction {
 
-  protected final EntityPokemon pokemon;
+	protected final EntityPokemon pokemon;
 
-  public PokemonInteraction(EntityPokemon pokemon) {
-    this.pokemon = pokemon;
-  }
+	public PokemonInteraction(EntityPokemon pokemon) {
+		this.pokemon = pokemon;
+	}
 
-  public abstract boolean interact(EntityPlayer player, ItemStack item);
+	public abstract boolean interact(EntityPlayer player, ItemStack item);
 }

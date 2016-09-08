@@ -13,30 +13,33 @@ import uk.pokemc.runtime.PokemcMod;
 
 @SideOnly(Side.CLIENT)
 public class RenderPikachu extends RenderLiving<EntityPikachu> {
-	
-    public static final ResourceLocation PIKACHU_TEXTURES = new ResourceLocation(PokemcMod.MODID + ":textures/entity/pikachu.png");
 
-    public RenderPikachu(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn){
-    	super(renderManagerIn, modelBaseIn, shadowSizeIn);
-    	System.out.println("Our renderer for RenderLiving<EntityPikachu> has been created");
-    }
-    public RenderPikachu(RenderManager renderManagerIn){
-    	super(renderManagerIn, new ModelPikachu(), 2);
-    }
+	public static final ResourceLocation PIKACHU_TEXTURES = new ResourceLocation(PokemcMod.MODID + ":textures/entity/pikachu.png");
 
-    /**
-     * Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
-     */
+	public RenderPikachu(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn) {
+		super(renderManagerIn, modelBaseIn, shadowSizeIn);
+		System.out.println("Our renderer for RenderLiving<EntityPikachu> has been created");
+	}
+
+	public RenderPikachu(RenderManager renderManagerIn) {
+		super(renderManagerIn, new ModelPikachu(), 2);
+	}
+
+	/**
+	 * Returns the location of an entity's texture. Doesn't seem to be called
+	 * unless you call Render.bindEntityTexture.
+	 */
 	@Override
 	protected ResourceLocation getEntityTexture(EntityPikachu entity) {
 		// TODO Auto-generated method stub
 		return PIKACHU_TEXTURES;
 	}
+
 	@Override
 	protected boolean canRenderName(EntityPikachu p_canRenderName_1_) {
 		// TODO Auto-generated method stub
 		System.out.println("Name? : " + super.canRenderName(p_canRenderName_1_));
 		return super.canRenderName(p_canRenderName_1_);
 	}
-	
+
 }
