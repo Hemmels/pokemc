@@ -16,7 +16,6 @@ import uk.pokemc.pokemon.entities.RenderBulbasaur;
 import uk.pokemc.pokemon.entities.RenderPikachu;
 import uk.pokemc.runtime.BasicProxy;
 import uk.pokemc.runtime.PokemcMod;
-import uk.pokemc.runtime.PokemonRegister;
 
 @SideOnly(Side.CLIENT)
 public class ClientProxy extends BasicProxy {
@@ -30,10 +29,10 @@ public class ClientProxy extends BasicProxy {
     }
 
     // CLient should register the Pikachu Renderer
-    ModelLoader.setCustomMeshDefinition(PokemonRegister.POK_PIKACHU,
-        stack -> RenderPikachu.PIKACHU_MODEL);
-    ModelLoader.setCustomMeshDefinition(PokemonRegister.POK_BULBASAUR, 
-        stack -> RenderBulbasaur.BULBASAUR_MODEL);
+//    ModelLoader.setCustomMeshDefinition(PokemonRegister.POK_PIKACHU,
+//        stack -> RenderPikachu.PIKACHU_MODEL);
+//    ModelLoader.setCustomMeshDefinition(PokemonRegister.POK_BULBASAUR, 
+//        stack -> RenderBulbasaur.BULBASAUR_MODEL);
     RenderingRegistry.registerEntityRenderingHandler(EntityPikachu.class, RenderPikachu::new);
     RenderingRegistry.registerEntityRenderingHandler(EntityBulbasaur.class, RenderBulbasaur::new);
   }

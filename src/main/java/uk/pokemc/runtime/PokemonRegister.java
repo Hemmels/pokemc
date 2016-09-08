@@ -7,8 +7,8 @@ import uk.pokemc.pokemon.entities.EntityPikachu;
 
 public class PokemonRegister {
 
-  public static final ItemBase POK_PIKACHU = new ItemBase("pikachu", true);
-  public static final ItemBase POK_BULBASAUR = new ItemBase("bulbasaur", true);
+//  public static final ItemBase POK_PIKACHU = new ItemBase("pikachu", true);
+//  public static final ItemBase POK_BULBASAUR = new ItemBase("bulbasaur", true);
 
   private static final int ENTITY_TRACKING_RANGE = 80;
   private static final int ENTITY_UPDATE_FREQ = 3;

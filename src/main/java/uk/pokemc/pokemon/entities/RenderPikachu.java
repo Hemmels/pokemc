@@ -7,6 +7,7 @@ import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import uk.pokemc.pokemon.pikachu.ModelPikachu;
 import uk.pokemc.runtime.PokemcMod;
 
 @SideOnly(Side.CLIENT)
@@ -14,15 +15,14 @@ public class RenderPikachu extends RenderLiving<EntityPikachu> {
 
   public static final ResourceLocation PIKACHU_TEXTURES = new ResourceLocation(
       PokemcMod.MODID + ":textures/entity/pikachu.png");
-  public static final ModelResourceLocation PIKACHU_MODEL = new ModelResourceLocation(
-      PokemcMod.MODID + ":models/entity/pikachu.json");
+  public static final ModelResourceLocation PIKACHU_MODEL = new ModelResourceLocation(PokemcMod.MODID + ":models/entity/pikachu.json");
 
   public RenderPikachu(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn) {
     super(renderManagerIn, modelBaseIn, shadowSizeIn);
   }
 
   public RenderPikachu(RenderManager renderManagerIn) {
-    super(renderManagerIn, new ModelPokemon(ModelPokemon.PIKACHU), 1f);
+    super(renderManagerIn, new ModelPikachu(), 1f);
   }
 
   /**
