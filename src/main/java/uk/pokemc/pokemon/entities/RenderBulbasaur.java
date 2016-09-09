@@ -21,7 +21,7 @@ public class RenderBulbasaur extends RenderLiving<EntityBulbasaur> {
 	}
 
 	public RenderBulbasaur(RenderManager renderManagerIn) {
-		super(renderManagerIn, new ModelBulbasaur(), 0.2f);
+		super(renderManagerIn, new ModelBulbasaur(), 1f);
 	}
 
 	/**

@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "pokemc:pokeball",
+					"name": "pokemc:pokemon",
 					"weight": 1,
 					"quality": 1
 				}

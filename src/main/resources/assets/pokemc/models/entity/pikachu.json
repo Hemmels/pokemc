@@ -8,7 +8,7 @@
       {
         "size": "1,3,1",
         "origin": "0,0,0",
-        "position": "-3,3,-2",
+        "position": "2,3,1",
         "rotation": "0,0,0",
         "textureOffset": "0,0",
         "textureSize": "16,48,16"
@@ -16,7 +16,7 @@
       {
         "size": "1,3,1",
         "origin": "0,0,0",
-        "position": "1,3,-2",
+        "position": "-2,3,1",
         "rotation": "0,0,0",
         "textureOffset": "64,0",
         "textureSize": "16,48,16"
@@ -24,7 +24,7 @@
       {
         "size": "2,1,1",
         "origin": "0,0,0",
-        "position": "2,10,-3",
+        "position": "-4,10,2",
         "rotation": "0,0,0",
         "textureOffset": "128,0",
         "textureSize": "32,16,16"
@@ -32,7 +32,7 @@
       {
         "size": "2,1,1",
         "origin": "0,0,0",
-        "position": "-5,10,-3",
+        "position": "3,10,2",
         "rotation": "0,0,0",
         "textureOffset": "224,0",
         "textureSize": "32,16,16"
@@ -40,7 +40,7 @@
       {
         "size": "1,1,1",
         "origin": "0,0,0",
-        "position": "0,15,-2.5",
+        "position": "-1,15,1.5",
         "rotation": "0,0,0",
         "textureOffset": "320,0",
         "textureSize": "16,16,16"
@@ -48,7 +48,7 @@
       {
         "size": "1,1,1",
         "origin": "0,0,0",
-        "position": "-2,15,-2.5",
+        "position": "1,15,1.5",
         "rotation": "0,0,0",
         "textureOffset": "384,0",
         "textureSize": "16,16,16"
@@ -56,15 +56,15 @@
       {
         "size": "1,2,3",
         "origin": "0,0,0",
-        "position": "-1,9,3.5",
-        "rotation": "45,0,0",
+        "position": "0,9,-6.5",
+        "rotation": "-45,0,0",
         "textureOffset": "448,0",
         "textureSize": "16,32,48"
       },
       {
         "size": "4,4,4",
         "origin": "0,0,0",
-        "position": "-2.5,5,-3.5",
+        "position": "-1.5,5,-0.5",
         "rotation": "0,0,0",
         "textureOffset": "576,0",
         "textureSize": "64,64,64"
@@ -72,15 +72,15 @@
       {
         "size": "1,1.5,3",
         "origin": "0,0,0",
-        "position": "-1,11,3",
-        "rotation": "22.5,0,0",
+        "position": "0,11,-6",
+        "rotation": "-22.5,0,0",
         "textureOffset": "832,0",
         "textureSize": "16,32,48"
       },
       {
         "size": "1,1,2",
         "origin": "0,0,0",
-        "position": "-1,12.5,2",
+        "position": "0,12.5,-4",
         "rotation": "0,0,0",
         "textureOffset": "528,0",
         "textureSize": "16,16,32"
@@ -88,7 +88,7 @@
       {
         "size": "1,1,2",
         "origin": "0,0,0",
-        "position": "-1,13.5,1",
+        "position": "0,13.5,-3",
         "rotation": "0,0,0",
         "textureOffset": "768,0",
         "textureSize": "16,16,32"
@@ -96,7 +96,7 @@
       {
         "size": "5,6,5",
         "origin": "0,0,0",
-        "position": "-3,9,-4",
+        "position": "-2,9,-1",
         "rotation": "0,0,0",
         "textureOffset": "128,32",
         "textureSize": "80,96,80"

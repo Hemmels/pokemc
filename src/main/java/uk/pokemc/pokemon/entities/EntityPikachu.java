@@ -5,6 +5,7 @@ import java.util.Calendar;
 import javax.annotation.Nullable;
 
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -15,11 +16,15 @@ import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.DamageSource;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.storage.loot.LootTableList;
 import uk.pokemc.pokemon.EntityPokemon;
+import uk.pokemc.runtime.PokemcMod;
 
 public class EntityPikachu extends EntityPokemon {
 	// No shorts used in Forge/MC - Use Integer instead
@@ -100,6 +105,14 @@ public class EntityPikachu extends EntityPokemon {
 	}
 
 	/**
+	 * Called when the entity is attacked.
+	 */
+	@Override
+	public boolean attackEntityFrom(DamageSource source, float amount) {
+		return isEntityInvulnerable(source);
+	}
+
+	/**
 	 * (abstract) Protected helper method to read subclass entity data from NBT.
 	 */
 	@Override
@@ -173,6 +186,23 @@ public class EntityPikachu extends EntityPokemon {
 	@Override
 	protected void playStepSound(BlockPos pos, Block blockIn) {
 		this.playSound(SoundEvents.ENTITY_COW_STEP, 0.15F, 1.0F);
+	}
+
+	@Override
+	@Nullable
+	protected ResourceLocation getLootTable() {
+		ResourceLocation loc = LootTableList.register(new ResourceLocation(PokemcMod.MODID, "entities/pikachu"));
+		return loc;
+	}
+
+	@Override
+	public void onEntityUpdate() {
+		super.onEntityUpdate();
+	}
+
+	@Override
+	public void onUpdate() {
+		super.onUpdate();
 	}
 
 }
