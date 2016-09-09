@@ -19,7 +19,7 @@ public class PokemonRegister {
 	private static final int ENTITY_TRACKING_RANGE = 80;
 	private static final int ENTITY_UPDATE_FREQ = 3;
 	private static final boolean ENTITY_SEND_VELO_UPDATES = true;
-	public final static ResourceLocation LOOT_TABLE = new ResourceLocation(PokemcMod.MODID, "loot_tables/pokemon");
+	public final static ResourceLocation LOOT_TABLE = new ResourceLocation(PokemcMod.MODID, "pokemon");
 
 	public static int modEntityID;
 
