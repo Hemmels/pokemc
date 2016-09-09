@@ -1,4 +1,4 @@
-package uk.pokemc.pokemon.pikachu;
+package uk.pokemc.pokemon.charmander;
 
 import java.util.Calendar;
 
@@ -9,27 +9,23 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAILookIdle;
-import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.DamageSource;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import uk.pokemc.pokemon.EntityPokemon;
-import uk.pokemc.runtime.PokemonRegister;
 
-public class EntityPikachu extends EntityPokemon {
-	public static final int POKEID = 25;// MathHelper.getRandomUUID().hashCode();
+public class EntityCharmander extends EntityPokemon {
+	public static final int POKEID = 3;
 
-	public EntityPikachu(World worldIn) {
+	public EntityCharmander(World worldIn) {
 		super(worldIn);
-		this.setCustomNameTag("Pikachu");
+		this.setCustomNameTag("Char Char");
 		this.setCanPickUpLoot(false);
 		this.setHealth(10);
 		// TODO: Reserve and use IDs 1000+ for each pokemon?
@@ -45,19 +41,19 @@ public class EntityPikachu extends EntityPokemon {
 	 * Returns the volume for the sounds this mob makes.
 	 */
 	protected float getSoundVolume() {
-		return 0.1F;
+		return 0.2F;
 	}
 
 	/**
 	 * Gets the pitch of living sounds in living entities.
 	 */
 	protected float getSoundPitch() {
-		return super.getSoundPitch() * 0.75F;
+		return super.getSoundPitch() * 1.25F;
 	}
 
 	@Nullable
 	protected SoundEvent getAmbientSound() {
-		return SoundEvents.ENTITY_COW_AMBIENT;
+		return SoundEvents.ENTITY_DONKEY_ANGRY;
 	}
 
 	protected SoundEvent getHurtSound() {
@@ -73,7 +69,7 @@ public class EntityPikachu extends EntityPokemon {
 	 * when colliding.
 	 */
 	public boolean canBePushed() {
-		return false;
+		return true;
 	}
 
 	protected void collideWithEntity(Entity entityIn) {
@@ -94,13 +90,6 @@ public class EntityPikachu extends EntityPokemon {
 	public void setPokemcType(byte type) {
 		byte b0 = ((Byte) this.dataManager.get(TYPE)).byteValue();
 		this.dataManager.set(TYPE, Byte.valueOf((byte) (b0 | 1)));
-	}
-
-	/**
-	 * Called when the entity is attacked.
-	 */
-	public boolean attackEntityFrom(DamageSource source, float amount) {
-		return isEntityInvulnerable(source);
 	}
 
 	/**
@@ -156,10 +145,10 @@ public class EntityPikachu extends EntityPokemon {
 	}
 
 	protected void initEntityAI() {
-		this.tasks.addTask(0, new EntityAISwimming(this));
-		this.tasks.addTask(1, new EntityAIWander(this, 1.0D));
-		this.tasks.addTask(2, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
-		this.tasks.addTask(3, new EntityAILookIdle(this));
+		// Charmanders dont swim!
+		this.tasks.addTask(0, new EntityAIWander(this, 1.0D));
+		this.tasks.addTask(1, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
+		this.tasks.addTask(2, new EntityAILookIdle(this));
 	}
 
 	protected void applyEntityAttributes() {
@@ -170,21 +159,6 @@ public class EntityPikachu extends EntityPokemon {
 
 	protected void playStepSound(BlockPos pos, Block blockIn) {
 		this.playSound(SoundEvents.ENTITY_COW_STEP, 0.15F, 1.0F);
-	}
-
-	@Nullable
-	protected ResourceLocation getLootTable() {
-		return PokemonRegister.getLootTable();
-	}
-
-	@Override
-	public void onEntityUpdate() {
-		super.onEntityUpdate();
-	}
-
-	@Override
-	public void onUpdate() {
-		super.onUpdate();
 	}
 
 }

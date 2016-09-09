@@ -12,15 +12,12 @@ import com.google.gson.JsonParser;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
-import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.entity.Entity;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-
 import uk.pokemc.json.Block;
 import uk.pokemc.pokemon.bulbasaur.ModelBulbasaur;
 import uk.pokemc.pokemon.pikachu.ModelPikachu;
-import uk.pokemc.runtime.PokemonRegister;
 
 @SideOnly(Side.CLIENT)
 public class BDCraftModelPokemon extends ModelBase {
@@ -96,7 +93,7 @@ public class BDCraftModelPokemon extends ModelBase {
 			modelRenderer.setTextureSize(x, y);
 			blocksForRender.add(modelRenderer);
 		}
-		System.out.println(name + " has " + blocksForRender.size() + "renderable blocks");
+		System.out.println(name + " has " + blocksForRender.size() + " renderable blocks");
 		System.out.println(String.format("and is using texture with size: %d,%d", x, y));
 		return blocksForRender;
 	}

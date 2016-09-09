@@ -27,10 +27,11 @@ import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
-import uk.pokemc.pokemon.entities.EntityPikachu;
+import uk.pokemc.runtime.PokemonRegister;
 
 public abstract class EntityPokemon extends EntityCreature {
 
@@ -44,8 +45,8 @@ public abstract class EntityPokemon extends EntityCreature {
 
 	public static final double BASE_SPEED_GROUND = 0.3;
 	public static final double BASE_SPEED_AIR = 0.4;
-	public static final double BASE_DAMAGE = 8;
-	public static final double BASE_HEALTH = 60;
+	public static final double BASE_DAMAGE = 5;
+	public static final double BASE_HEALTH = 30;
 	public static final float BASE_WIDTH = 2.75f;
 	public static final float BASE_HEIGHT = 2.75f;
 	public static final double BASE_FOLLOW_RANGE = 16;
@@ -69,18 +70,18 @@ public abstract class EntityPokemon extends EntityCreature {
 	}
 
 	@Override
-	// Pokemon can only be hurt by other pokemon
+	// Pokemon can only be hurt by other pokemon (TODO: Or water)
 	public boolean isEntityInvulnerable(DamageSource source) {
-		if (source == INTERPOKEMON) {
-			return true;
+		if (source == INTERPOKEMON || source == DamageSource.drown || source.getDamageType().equals("drown")) {
+			return false;
 		}
-		return false;
+		return true;
 	}
 
 	@Override
 	protected void applyEntityAttributes() {
 		super.applyEntityAttributes();
-		this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(20.0D);
+		this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(5D);
 		this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.30000001192092896D);
 	}
 
@@ -114,7 +115,7 @@ public abstract class EntityPokemon extends EntityCreature {
 		super.writeEntityToNBT(nbt);
 		// nbt.setBoolean(NBT_SADDLED, isSaddled());
 
-		helpers.values().forEach(helper -> helper.writeToNBT(nbt));
+//		helpers.values().forEach(helper -> helper.writeToNBT(nbt));
 	}
 
 	/**
@@ -125,7 +126,7 @@ public abstract class EntityPokemon extends EntityCreature {
 		super.readEntityFromNBT(nbt);
 		// setSaddled(nbt.getBoolean(NBT_SADDLED));
 
-		helpers.values().forEach(helper -> helper.readFromNBT(nbt));
+//		helpers.values().forEach(helper -> helper.readFromNBT(nbt));
 	}
 
 	/**
@@ -200,26 +201,26 @@ public abstract class EntityPokemon extends EntityCreature {
 	 */
 	@Override
 	protected void onDeathUpdate() {
-		helpers.values().forEach(PokemonHelper::onDeathUpdate);
+		super.onDeathUpdate();
 
 		// unmount any riding entities
-		removePassengers();
+		//removePassengers();
 
 		// freeze at place
 		motionX = motionY = motionZ = 0;
 		rotationYaw = prevRotationYaw;
 		rotationYawHead = prevRotationYawHead;
 
-		if (deathTime >= getMaxDeathTime()) {
+//		if (deathTime >= getMaxDeathTime()) {
 			setDead();
-		}
+//		}
 
 		deathTime++;
 	}
 
 	@Override
 	public void setDead() {
-		helpers.values().forEach(PokemonHelper::onDeath);
+//		helpers.values().forEach(PokemonHelper::onDeath);
 		super.setDead();
 	}
 
@@ -318,10 +319,6 @@ public abstract class EntityPokemon extends EntityCreature {
 		return (T) helpers.get(clazz);
 	}
 
-	public PokemonInteractHelper getInteractHelper() {
-		return getHelper(PokemonInteractHelper.class);
-	}
-
 	/**
 	 * For vehicles, the first passenger is generally considered the controller
 	 * and "drives" the vehicle. For example, Pigs, Horses, and Boats are
@@ -340,50 +337,6 @@ public abstract class EntityPokemon extends EntityCreature {
 		return false;
 	}
 
-	public EntityPlayer getRidingPlayer() {
-		Entity entity = getControllingPassenger();
-		if (entity instanceof EntityPlayer) {
-			return (EntityPlayer) entity;
-		}
-		else {
-			return null;
-		}
-	}
-
-	public void setRidingPlayer(EntityPlayer player) {
-		player.rotationYaw = rotationYaw;
-		player.rotationPitch = rotationPitch;
-		player.startRiding(this);
-	}
-
-	// @Override
-	// public void updateRiderPosition() {
-	// if (riddenByEntity != null) {
-	// double px = posX;
-	// double py = posY + getMountedYOffset() + riddenByEntity.getYOffset();
-	// double pz = posZ;
-	//
-	// // dragon position is the middle of the model and the saddle is on
-	// // the shoulders, so move player forwards on Z axis relative to the
-	// // dragon's rotation to fix that
-	// Vec3 pos = new Vec3(0, 0, 0.8 * getScale());
-	// pos = pos.rotateYaw((float) Math.toRadians(-renderYawOffset)); // oops
-	// px += pos.xCoord;
-	// py += pos.yCoord;
-	// pz += pos.zCoord;
-	//
-	// riddenByEntity.setPosition(px, py, pz);
-	//
-	// // fix rider rotation
-	// if (riddenByEntity instanceof EntityLiving) {
-	// EntityLiving rider = ((EntityLiving) riddenByEntity);
-	// rider.prevRotationPitch = rider.rotationPitch;
-	// rider.prevRotationYaw = rider.rotationYaw;
-	// rider.renderYawOffset = renderYawOffset;
-	// }
-	// }
-	// }
-
 	public boolean isInvulnerableTo(DamageSource src) {
 		Entity srcEnt = src.getEntity();
 		if (srcEnt != null) {
@@ -396,11 +349,6 @@ public abstract class EntityPokemon extends EntityCreature {
 			if (isPassenger(srcEnt)) {
 				return true;
 			}
-		}
-
-		// don't drown as egg
-		if (src.damageType.equals("drown")) {
-			return true;
 		}
 
 		return isEntityInvulnerable(src);
@@ -420,7 +368,7 @@ public abstract class EntityPokemon extends EntityCreature {
 	}
 
 	public int getMaxDeathTime() {
-		return 120;
+		return 40;
 	}
 
 	public void setImmuneToFire(boolean isImmuneToFire) {
@@ -429,28 +377,6 @@ public abstract class EntityPokemon extends EntityCreature {
 
 	public void setAttackDamage(double damage) {
 		getEntityAttribute(ATTACK_DAMAGE).setBaseValue(damage);
-	}
-
-	/**
-	 * Public wrapper for protected final setScale(), used by
-	 * PokemonLifeStageHelper.
-	 * 
-	 * @param scale
-	 */
-	public void setScalePublic(float scale) {
-		double posXTmp = posX;
-		double posYTmp = posY;
-		double posZTmp = posZ;
-		boolean onGroundTmp = onGround;
-
-		// workaround for a vanilla bug; the position is apparently not set
-		// correcty
-		// after changing the entity size, causing asynchronous server/client
-		// positioning
-		setPosition(posXTmp, posYTmp, posZTmp);
-
-		// otherwise, setScale stops the dragon from landing while it is growing
-		onGround = onGroundTmp;
 	}
 
 	@Override
@@ -483,8 +409,24 @@ public abstract class EntityPokemon extends EntityCreature {
 	@Override
 	public IEntityLivingData onInitialSpawn(DifficultyInstance p_onInitialSpawn_1_, IEntityLivingData p_onInitialSpawn_2_) {
 		// TODO Auto-generated method stub
-		System.out.println(getEntityId() + " was added to the world! - it's a " + getName());
 		return super.onInitialSpawn(p_onInitialSpawn_1_, p_onInitialSpawn_2_);
+	}
+
+	@Override
+	protected void updateAITasks() {
+		super.updateAITasks();
+
+		// TODO: Remove. For convienence, make pokemon take drown damage from rain etc.
+        if (this.isWet())
+        {
+            this.attackEntityFrom(DamageSource.drown, 1.0F);
+        }
+	}
+	
+	@Override
+	@Nullable
+	protected ResourceLocation getLootTable() {
+		return PokemonRegister.getLootTable();
 	}
 
 }

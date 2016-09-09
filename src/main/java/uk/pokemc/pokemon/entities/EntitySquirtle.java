@@ -5,7 +5,6 @@ import java.util.Calendar;
 import javax.annotation.Nullable;
 
 import net.minecraft.block.Block;
-import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -16,15 +15,13 @@ import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.DamageSource;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraft.world.storage.loot.LootTableList;
 import uk.pokemc.pokemon.EntityPokemon;
-import uk.pokemc.runtime.PokemcMod;
+import uk.pokemc.runtime.PokemonRegister;
 
 public class EntitySquirtle extends EntityPokemon {
 	// No shorts used in Forge/MC - Use Integer instead
@@ -102,14 +99,6 @@ public class EntitySquirtle extends EntityPokemon {
 	public void setPokemcType(byte type) {
 		byte b0 = this.dataManager.get(TYPE).byteValue();
 		this.dataManager.set(TYPE, Byte.valueOf((byte) (b0 | 1)));
-	}
-
-	/**
-	 * Called when the entity is attacked.
-	 */
-	@Override
-	public boolean attackEntityFrom(DamageSource source, float amount) {
-		return isEntityInvulnerable(source);
 	}
 
 	/**
@@ -191,18 +180,7 @@ public class EntitySquirtle extends EntityPokemon {
 	@Override
 	@Nullable
 	protected ResourceLocation getLootTable() {
-		ResourceLocation loc = LootTableList.register(new ResourceLocation(PokemcMod.MODID, "entities/pikachu"));
-		return loc;
-	}
-
-	@Override
-	public void onEntityUpdate() {
-		super.onEntityUpdate();
-	}
-
-	@Override
-	public void onUpdate() {
-		super.onUpdate();
+		return PokemonRegister.getLootTable();
 	}
 
 }

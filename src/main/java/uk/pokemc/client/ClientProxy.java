@@ -10,6 +10,8 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import uk.pokemc.pokemon.charmander.EntityCharmander;
+import uk.pokemc.pokemon.charmander.RenderCharmander;
 import uk.pokemc.pokemon.entities.EntityBulbasaur;
 import uk.pokemc.pokemon.entities.EntityPikachu;
 import uk.pokemc.pokemon.entities.EntitySquirtle;
@@ -38,6 +40,7 @@ public class ClientProxy extends BasicProxy {
 		RenderingRegistry.registerEntityRenderingHandler(EntityPikachu.class, RenderPikachu::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntityBulbasaur.class, RenderBulbasaur::new);
 		RenderingRegistry.registerEntityRenderingHandler(EntitySquirtle.class, RenderSquirtle::new);
+		RenderingRegistry.registerEntityRenderingHandler(EntityCharmander.class, RenderCharmander::new);
 	}
 
 	@Override

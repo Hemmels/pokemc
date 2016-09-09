@@ -15,24 +15,17 @@ import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.datasync.DataParameter;
-import net.minecraft.network.datasync.DataSerializers;
-import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraft.world.storage.loot.LootTableList;
 import uk.pokemc.pokemon.EntityPokemon;
-import uk.pokemc.runtime.PokemcMod;
+import uk.pokemc.runtime.PokemonRegister;
 
 public class EntityBulbasaur extends EntityPokemon {
-	// No shorts used in Forge/MC - Use Integer instead
-	private static final DataParameter<Integer> ID = EntityDataManager.<Integer>createKey(EntityBulbasaur.class, DataSerializers.VARINT);
-
-	public static final int ENTITY_ID = 1001;// MathHelper.getRandomUUID().hashCode();
+	public static final int POKEID = 1;// MathHelper.getRandomUUID().hashCode();
 
 	public EntityBulbasaur(World worldIn) {
 		super(worldIn);
@@ -181,8 +174,7 @@ public class EntityBulbasaur extends EntityPokemon {
 
 	@Nullable
 	protected ResourceLocation getLootTable() {
-		ResourceLocation loc = LootTableList.register(new ResourceLocation(PokemcMod.MODID, "entities/pikachu"));
-		return loc;
+		return PokemonRegister.getLootTable();
 	}
 
 	@Override
