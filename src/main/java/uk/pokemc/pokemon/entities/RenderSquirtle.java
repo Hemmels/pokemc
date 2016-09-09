@@ -7,7 +7,6 @@ import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import uk.pokemc.pokemon.bulbasaur.ModelBulbasaur;
 import uk.pokemc.runtime.PokemcMod;
 
 @SideOnly(Side.CLIENT)
@@ -21,7 +20,7 @@ public class RenderSquirtle extends RenderLiving<EntitySquirtle> {
 	}
 
 	public RenderSquirtle(RenderManager renderManagerIn) {
-		super(renderManagerIn, BDCraftModelPokemon.SQUIRTLE, 1f);
+		super(renderManagerIn, BDCraftModelPokemon.SQUIRTLE, 0.4f);
 	}
 
 	/**

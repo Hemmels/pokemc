@@ -1,7 +1,6 @@
 package uk.pokemc.pokemon.entities;
 
 import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.util.ResourceLocation;
@@ -14,14 +13,14 @@ import uk.pokemc.runtime.PokemcMod;
 public class RenderPikachu extends RenderLiving<EntityPikachu> {
 
 	public static final ResourceLocation PIKACHU_TEXTURES = new ResourceLocation(PokemcMod.MODID + ":textures/entity/pikachu.png");
-//	public static final ResourceLocation PIKACHU_MODEL = new ResourceLocation(PokemcMod.MODID + ":models/entity/pikachu.png");
-//	public static final ModelResourceLocation PIKACHU_BLOCKSTATE_FILE = new ModelResourceLocation(PokemcMod.MODID + ":models/entity/pikachu.json");
 
 	public RenderPikachu(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn) {
 		super(renderManagerIn, modelBaseIn, shadowSizeIn);
 	}
 
 	public RenderPikachu(RenderManager renderManagerIn) {
+		// Swap these lines to use the simple model or generated one.
+		//super(renderManagerIn, BDCraftModelPokemon.PIKACHU, 0.2f);
 		super(renderManagerIn, new ModelPikachu(), 0.2f);
 	}
 

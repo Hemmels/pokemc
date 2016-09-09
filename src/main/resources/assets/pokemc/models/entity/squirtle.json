@@ -1,6 +1,6 @@
 {
 "__comment": "Designed by Hemmels with BDcraft Cubik PRO 0.96 Beta - http://bdcraft.net",
-"textureSize": "128,64",
+"textureSize": "2048,1024",
 "componentGroups": [
   {
     "name": "squirtle",
@@ -8,2170 +8,2170 @@
       {
         "size": "0.5,0.5,1",
         "origin": "0,0,0",
-        "position": "-5.5,7,4.5",
+        "position": "5,7,-5.5",
         "rotation": "0,0,0",
         "textureOffset": "0,0",
-        "textureSize": "1,1,1"
+        "textureSize": "16,16,16"
       },
       {
         "size": "0.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-5.5,8,5.5",
+        "position": "5,8,-6",
         "rotation": "0,0,0",
-        "textureOffset": "4,0",
-        "textureSize": "1,1,1"
+        "textureOffset": "64,0",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-5.5,8,6",
+        "position": "4.5,8,-6.5",
         "rotation": "0,0,0",
-        "textureOffset": "8,0",
-        "textureSize": "1,1,1"
+        "textureOffset": "128,0",
+        "textureSize": "16,16,16"
       },
       {
         "size": "0.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-5,7.5,6.5",
+        "position": "4.5,7.5,-7",
         "rotation": "0,0,0",
-        "textureOffset": "12,0",
-        "textureSize": "1,1,1"
+        "textureOffset": "192,0",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-5.5,6.5,6.5",
+        "position": "4.5,6.5,-7",
         "rotation": "0,0,0",
-        "textureOffset": "16,0",
-        "textureSize": "1,1,1"
+        "textureOffset": "256,0",
+        "textureSize": "16,16,16"
       },
       {
         "size": "0.5,1,0.5",
         "origin": "0,0,0",
-        "position": "-4.5,14.5,2",
+        "position": "4,14.5,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "20,0",
-        "textureSize": "1,1,1"
+        "textureOffset": "320,0",
+        "textureSize": "16,16,16"
       },
       {
         "size": "0.5,0.5,1",
         "origin": "0,0,0",
-        "position": "-4.5,14,1.5",
+        "position": "4,14,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "24,0",
-        "textureSize": "1,1,1"
+        "textureOffset": "384,0",
+        "textureSize": "16,16,16"
       },
       {
         "size": "0.5,0.5,1",
         "origin": "0,0,0",
-        "position": "-4.5,6.5,6.5",
+        "position": "4,6.5,-7.5",
         "rotation": "0,0,0",
-        "textureOffset": "28,0",
-        "textureSize": "1,1,1"
+        "textureOffset": "448,0",
+        "textureSize": "16,16,16"
       },
       {
         "size": "0.5,1,0.5",
         "origin": "0,0,0",
-        "position": "-4,14,1",
+        "position": "3.5,14,-1.5",
         "rotation": "0,0,0",
-        "textureOffset": "32,0",
-        "textureSize": "1,1,1"
+        "textureOffset": "512,0",
+        "textureSize": "16,16,16"
       },
       {
         "size": "0.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-4,14.5,3.5",
+        "position": "3.5,14.5,-4",
         "rotation": "0,0,0",
-        "textureOffset": "36,0",
-        "textureSize": "1,1,1"
+        "textureOffset": "576,0",
+        "textureSize": "16,16,16"
       },
       {
         "size": "0.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-4,13.5,3.5",
+        "position": "3.5,13.5,-4",
         "rotation": "0,0,0",
-        "textureOffset": "40,0",
-        "textureSize": "1,1,1"
+        "textureOffset": "640,0",
+        "textureSize": "16,16,16"
       },
       {
         "size": "0.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-4,5.5,4.5",
+        "position": "3.5,5.5,-5",
         "rotation": "0,0,0",
-        "textureOffset": "44,0",
-        "textureSize": "1,1,1"
+        "textureOffset": "704,0",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1.5,0.5,1",
         "origin": "0,0,0",
-        "position": "-5,8,5",
+        "position": "3.5,8,-6",
         "rotation": "0,0,0",
-        "textureOffset": "48,0",
-        "textureSize": "2,1,1"
+        "textureOffset": "768,0",
+        "textureSize": "32,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-4.5,6,5.5",
+        "position": "3.5,6,-6",
         "rotation": "0,0,0",
-        "textureOffset": "54,0",
-        "textureSize": "1,1,1"
+        "textureOffset": "864,0",
+        "textureSize": "16,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-5.5,7.5,6",
+        "position": "3.5,7.5,-6.5",
         "rotation": "0,0,0",
-        "textureOffset": "58,0",
-        "textureSize": "2,1,1"
+        "textureOffset": "928,0",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-5.5,6.5,6",
+        "position": "3.5,6.5,-6.5",
         "rotation": "0,0,0",
-        "textureOffset": "0,2",
-        "textureSize": "2,1,1"
+        "textureOffset": "0,32",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,1",
         "origin": "0,0,0",
-        "position": "-5.5,7,6",
+        "position": "3.5,7,-7",
         "rotation": "0,0,0",
-        "textureOffset": "6,2",
-        "textureSize": "2,1,1"
+        "textureOffset": "96,32",
+        "textureSize": "32,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-4,15,3.5",
+        "position": "3,15,-4",
         "rotation": "0,0,0",
-        "textureOffset": "12,2",
-        "textureSize": "1,1,1"
+        "textureOffset": "192,32",
+        "textureSize": "16,16,16"
       },
       {
         "size": "2,0.5,1",
         "origin": "0,0,0",
-        "position": "-5,8,4",
+        "position": "3,8,-5",
         "rotation": "0,0,0",
-        "textureOffset": "16,2",
-        "textureSize": "2,1,1"
+        "textureOffset": "256,32",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-5.5,7.5,5",
+        "position": "3,7.5,-5.5",
         "rotation": "0,0,0",
-        "textureOffset": "22,2",
-        "textureSize": "3,1,1"
+        "textureOffset": "352,32",
+        "textureSize": "48,16,16"
       },
       {
         "size": "2,0.5,1",
         "origin": "0,0,0",
-        "position": "-5,6,4.5",
+        "position": "3,6,-5.5",
         "rotation": "0,0,0",
-        "textureOffset": "30,2",
-        "textureSize": "2,1,1"
+        "textureOffset": "480,32",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2.5,1.5,0.5",
         "origin": "0,0,0",
-        "position": "-5.5,6.5,5.5",
+        "position": "3,6.5,-6",
         "rotation": "0,0,0",
-        "textureOffset": "36,2",
-        "textureSize": "3,2,1"
+        "textureOffset": "576,32",
+        "textureSize": "48,32,16"
       },
       {
         "size": "1,1,0.5",
         "origin": "0,0,0",
-        "position": "-3.5,12.5,3.5",
+        "position": "2.5,12.5,-4",
         "rotation": "0,0,0",
-        "textureOffset": "44,2",
-        "textureSize": "1,1,1"
+        "textureOffset": "704,32",
+        "textureSize": "16,16,16"
       },
       {
         "size": "2.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-5,6,4",
+        "position": "2.5,6,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "48,2",
-        "textureSize": "3,1,1"
+        "textureOffset": "768,32",
+        "textureSize": "48,16,16"
       },
       {
         "size": "2.5,0.5,1",
         "origin": "0,0,0",
-        "position": "-5,7.5,4",
+        "position": "2.5,7.5,-5",
         "rotation": "0,0,0",
-        "textureOffset": "56,2",
-        "textureSize": "3,1,1"
+        "textureOffset": "896,32",
+        "textureSize": "48,16,16"
       },
       {
         "size": "0.5,1,0.5",
         "origin": "0,0,0",
-        "position": "-3,5.5,4.5",
+        "position": "2.5,5.5,-5",
         "rotation": "0,0,0",
-        "textureOffset": "0,4",
-        "textureSize": "1,1,1"
+        "textureOffset": "0,64",
+        "textureSize": "16,16,16"
       },
       {
         "size": "2.5,1,1",
         "origin": "0,0,0",
-        "position": "-5,6.5,4.5",
+        "position": "2.5,6.5,-5.5",
         "rotation": "0,0,0",
-        "textureOffset": "4,4",
-        "textureSize": "3,1,1"
+        "textureOffset": "64,64",
+        "textureSize": "48,16,16"
       },
       {
         "size": "1.5,2,0.5",
         "origin": "0,0,0",
-        "position": "-3.5,14,1",
+        "position": "2,14,-1.5",
         "rotation": "0,0,0",
-        "textureOffset": "12,4",
-        "textureSize": "2,2,1"
+        "textureOffset": "192,64",
+        "textureSize": "32,32,16"
       },
       {
         "size": "1.5,1.5,0.5",
         "origin": "0,0,0",
-        "position": "-3.5,13.5,3.5",
+        "position": "2,13.5,-4",
         "rotation": "0,0,0",
-        "textureOffset": "18,4",
-        "textureSize": "2,2,1"
+        "textureOffset": "288,64",
+        "textureSize": "32,32,16"
       },
       {
         "size": "1,0.5,1",
         "origin": "0,0,0",
-        "position": "-3,15,3.5",
+        "position": "2,15,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "24,4",
-        "textureSize": "1,1,1"
+        "textureOffset": "384,64",
+        "textureSize": "16,16,16"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-5,6.5,4",
+        "position": "2,6.5,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "28,4",
-        "textureSize": "3,1,1"
+        "textureOffset": "448,64",
+        "textureSize": "48,16,16"
       },
       {
         "size": "2.5,1.5,1",
         "origin": "0,0,0",
-        "position": "-4,14,1.5",
+        "position": "1.5,14,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "44,4",
-        "textureSize": "3,2,1"
+        "textureOffset": "704,64",
+        "textureSize": "48,32,16"
       },
       {
         "size": "3,2,0.5",
         "origin": "0,0,0",
-        "position": "-4.5,13.5,2.5",
+        "position": "1.5,13.5,-3",
         "rotation": "0,0,0",
-        "textureOffset": "52,4",
-        "textureSize": "3,2,1"
+        "textureOffset": "832,64",
+        "textureSize": "48,32,16"
       },
       {
         "size": "3,2.5,0.5",
         "origin": "0,0,0",
-        "position": "-4.5,13,3",
+        "position": "1.5,13,-3.5",
         "rotation": "0,0,0",
-        "textureOffset": "36,5",
-        "textureSize": "3,3,1"
+        "textureOffset": "576,80",
+        "textureSize": "48,48,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2,14,0",
+        "position": "1,14,-0.5",
         "rotation": "0,0,0",
-        "textureOffset": "60,4",
-        "textureSize": "1,1,1"
+        "textureOffset": "960,64",
+        "textureSize": "16,16,16"
       },
       {
         "size": "3.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-4.5,13.5,2",
+        "position": "1,13.5,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "0,6",
-        "textureSize": "4,1,1"
+        "textureOffset": "0,96",
+        "textureSize": "64,16,16"
       },
       {
         "size": "1,1.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,13,-8",
+        "position": "-0.5,13,7.5",
         "rotation": "0,0,0",
-        "textureOffset": "24,6",
-        "textureSize": "1,2,1"
+        "textureOffset": "384,96",
+        "textureSize": "16,32,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,15,-7.5",
+        "position": "-0.5,15,7",
         "rotation": "0,0,0",
-        "textureOffset": "28,6",
-        "textureSize": "1,1,1"
+        "textureOffset": "448,96",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,15.5,-7",
+        "position": "-0.5,15.5,6.5",
         "rotation": "0,0,0",
-        "textureOffset": "32,6",
-        "textureSize": "1,1,1"
+        "textureOffset": "512,96",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,11,-7",
+        "position": "-0.5,11,6.5",
         "rotation": "0,0,0",
-        "textureOffset": "60,6",
-        "textureSize": "1,1,1"
+        "textureOffset": "960,96",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,10.5,-6",
+        "position": "-0.5,10.5,5.5",
         "rotation": "0,0,0",
-        "textureOffset": "10,7",
-        "textureSize": "1,1,1"
+        "textureOffset": "160,112",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,11,-4",
+        "position": "-0.5,11,3.5",
         "rotation": "0,0,0",
-        "textureOffset": "14,7",
-        "textureSize": "1,1,1"
+        "textureOffset": "224,112",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,11.5,-3.5",
+        "position": "-0.5,11.5,3",
         "rotation": "0,0,0",
-        "textureOffset": "18,7",
-        "textureSize": "1,1,1"
+        "textureOffset": "288,112",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,12,-3",
+        "position": "-0.5,12,2.5",
         "rotation": "0,0,0",
-        "textureOffset": "44,7",
-        "textureSize": "1,1,1"
+        "textureOffset": "704,112",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,11,-3",
+        "position": "-0.5,11,2.5",
         "rotation": "0,0,0",
-        "textureOffset": "48,7",
-        "textureSize": "1,1,1"
+        "textureOffset": "768,112",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,1",
         "origin": "0,0,0",
-        "position": "-0.5,15.5,-2.5",
+        "position": "-0.5,15.5,1.5",
         "rotation": "0,0,0",
-        "textureOffset": "52,7",
-        "textureSize": "1,1,1"
+        "textureOffset": "832,112",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,13,-2",
+        "position": "-0.5,13,1.5",
         "rotation": "0,0,0",
-        "textureOffset": "56,7",
-        "textureSize": "1,1,1"
+        "textureOffset": "896,112",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,1",
         "origin": "0,0,0",
-        "position": "-0.5,15,-1",
+        "position": "-0.5,15,0",
         "rotation": "0,0,0",
-        "textureOffset": "0,8",
-        "textureSize": "1,1,1"
+        "textureOffset": "0,128",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,1",
         "origin": "0,0,0",
         "position": "-0.5,14.5,-0.5",
         "rotation": "0,0,0",
-        "textureOffset": "4,8",
-        "textureSize": "1,1,1"
+        "textureOffset": "64,128",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,4.5,0",
+        "position": "-0.5,4.5,-0.5",
         "rotation": "0,0,0",
-        "textureOffset": "28,8",
-        "textureSize": "1,1,1"
+        "textureOffset": "448,128",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,1",
         "origin": "0,0,0",
-        "position": "-0.5,14,0",
+        "position": "-0.5,14,-1",
         "rotation": "0,0,0",
-        "textureOffset": "32,8",
-        "textureSize": "1,1,1"
+        "textureOffset": "512,128",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,13.5,2",
+        "position": "-0.5,13.5,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "60,8",
-        "textureSize": "1,1,1"
+        "textureOffset": "960,128",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,0,5.5",
+        "position": "-0.5,0,-6",
         "rotation": "0,0,0",
-        "textureOffset": "8,9",
-        "textureSize": "1,1,1"
+        "textureOffset": "128,144",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,5.5,6.5",
+        "position": "-0.5,5.5,-7",
         "rotation": "0,0,0",
-        "textureOffset": "12,9",
-        "textureSize": "1,1,1"
+        "textureOffset": "192,144",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,1,6.5",
+        "position": "-0.5,1,-7",
         "rotation": "0,0,0",
-        "textureOffset": "16,9",
-        "textureSize": "1,1,1"
+        "textureOffset": "256,144",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,1,0.5",
         "origin": "0,0,0",
-        "position": "-0.5,4,7.5",
+        "position": "-0.5,4,-8",
         "rotation": "0,0,0",
-        "textureOffset": "20,9",
-        "textureSize": "1,1,1"
+        "textureOffset": "320,144",
+        "textureSize": "16,16,16"
       },
       {
         "size": "2,1,0.5",
         "origin": "0,0,0",
-        "position": "-1,14,-7.5",
+        "position": "-1,14,7",
         "rotation": "0,0,0",
-        "textureOffset": "36,9",
-        "textureSize": "2,1,1"
+        "textureOffset": "576,144",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,1.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,11.5,-7.5",
+        "position": "-1,11.5,7",
         "rotation": "0,0,0",
-        "textureOffset": "42,9",
-        "textureSize": "2,2,1"
+        "textureOffset": "672,144",
+        "textureSize": "32,32,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,15,-7",
+        "position": "-1,15,6.5",
         "rotation": "0,0,0",
-        "textureOffset": "48,9",
-        "textureSize": "2,1,1"
+        "textureOffset": "768,144",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,2.5",
         "origin": "0,0,0",
-        "position": "-1,11,-6.5",
+        "position": "-1,11,4",
         "rotation": "0,0,0",
-        "textureOffset": "24,10",
-        "textureSize": "2,1,3"
+        "textureOffset": "384,160",
+        "textureSize": "32,16,48"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,11.5,-4",
+        "position": "-1,11.5,3.5",
         "rotation": "0,0,0",
-        "textureOffset": "54,9",
-        "textureSize": "2,1,1"
+        "textureOffset": "864,144",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,12,-3.5",
+        "position": "-1,12,3",
         "rotation": "0,0,0",
-        "textureOffset": "0,10",
-        "textureSize": "2,1,1"
+        "textureOffset": "0,160",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,4",
         "origin": "0,0,0",
-        "position": "-1,15.5,-6.5",
+        "position": "-1,15.5,2.5",
         "rotation": "0,0,0",
-        "textureOffset": "6,11",
-        "textureSize": "2,1,4"
+        "textureOffset": "96,176",
+        "textureSize": "32,16,64"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,12.5,-3",
+        "position": "-1,12.5,2.5",
         "rotation": "0,0,0",
-        "textureOffset": "14,11",
-        "textureSize": "2,1,1"
+        "textureOffset": "224,176",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,10.5,-3",
+        "position": "-1,10.5,2.5",
         "rotation": "0,0,0",
-        "textureOffset": "20,11",
-        "textureSize": "2,1,1"
+        "textureOffset": "320,176",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,1.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,8.5,-3",
+        "position": "-1,8.5,2.5",
         "rotation": "0,0,0",
-        "textureOffset": "34,11",
-        "textureSize": "2,2,1"
+        "textureOffset": "544,176",
+        "textureSize": "32,32,16"
       },
       {
         "size": "2,0.5,1",
         "origin": "0,0,0",
-        "position": "-1,13,-3",
+        "position": "-1,13,2",
         "rotation": "0,0,0",
-        "textureOffset": "48,11",
-        "textureSize": "2,1,1"
+        "textureOffset": "768,176",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,12,-2.5",
+        "position": "-1,12,2",
         "rotation": "0,0,0",
-        "textureOffset": "54,11",
-        "textureSize": "2,1,1"
+        "textureOffset": "864,176",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,7,-2.5",
+        "position": "-1,7,2",
         "rotation": "0,0,0",
-        "textureOffset": "0,12",
-        "textureSize": "2,1,1"
+        "textureOffset": "0,192",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,3",
         "origin": "0,0,0",
-        "position": "-1,15,-4",
+        "position": "-1,15,1",
         "rotation": "0,0,0",
-        "textureOffset": "40,13",
-        "textureSize": "2,1,3"
+        "textureOffset": "640,208",
+        "textureSize": "32,16,48"
       },
       {
         "size": "2,0.5,1",
         "origin": "0,0,0",
-        "position": "-1,14,-2",
+        "position": "-1,14,1",
         "rotation": "0,0,0",
-        "textureOffset": "14,13",
-        "textureSize": "2,1,1"
+        "textureOffset": "224,208",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,1.5",
         "origin": "0,0,0",
-        "position": "-1,13.5,-2.5",
+        "position": "-1,13.5,1",
         "rotation": "0,0,0",
-        "textureOffset": "47,13",
-        "textureSize": "2,1,2"
+        "textureOffset": "752,208",
+        "textureSize": "32,16,32"
       },
       {
         "size": "2,0.5,2",
         "origin": "0,0,0",
-        "position": "-1,14.5,-2.5",
+        "position": "-1,14.5,0.5",
         "rotation": "0,0,0",
-        "textureOffset": "55,13",
-        "textureSize": "2,1,2"
+        "textureOffset": "880,208",
+        "textureSize": "32,16,32"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2,14,-0.5",
+        "position": "-1,14,0",
         "rotation": "0,0,0",
-        "textureOffset": "20,14",
-        "textureSize": "3,1,1"
+        "textureOffset": "320,224",
+        "textureSize": "48,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,5,-0.5",
+        "position": "-1,5,0",
         "rotation": "0,0,0",
-        "textureOffset": "0,14",
-        "textureSize": "2,1,1"
+        "textureOffset": "0,224",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,1.5,0.5",
+        "position": "-1,1.5,-1",
         "rotation": "0,0,0",
-        "textureOffset": "28,14",
-        "textureSize": "2,1,1"
+        "textureOffset": "448,224",
+        "textureSize": "32,16,16"
       },
       {
         "size": "5.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-4.5,13.5,1.5",
+        "position": "-1,13.5,-2",
         "rotation": "0,0,0",
-        "textureOffset": "0,16",
-        "textureSize": "6,1,1"
+        "textureOffset": "0,256",
+        "textureSize": "96,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,0,2",
+        "position": "-1,0,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "34,14",
-        "textureSize": "2,1,1"
+        "textureOffset": "544,224",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,12,3.5",
+        "position": "-1,12,-4",
         "rotation": "0,0,0",
-        "textureOffset": "14,16",
-        "textureSize": "2,1,1"
+        "textureOffset": "224,256",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,11,4",
+        "position": "-1,11,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "20,16",
-        "textureSize": "2,1,1"
+        "textureOffset": "320,256",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,6.5,4",
+        "position": "-1,6.5,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "26,16",
-        "textureSize": "2,1,1"
+        "textureOffset": "416,256",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,6,5.5",
+        "position": "-1,6,-6",
         "rotation": "0,0,0",
-        "textureOffset": "32,16",
-        "textureSize": "2,1,1"
+        "textureOffset": "512,256",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,0.5,6",
+        "position": "-1,0.5,-6.5",
         "rotation": "0,0,0",
-        "textureOffset": "50,16",
-        "textureSize": "2,1,1"
+        "textureOffset": "800,256",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1,2.5,7",
+        "position": "-1,2.5,-7.5",
         "rotation": "0,0,0",
-        "textureOffset": "56,16",
-        "textureSize": "2,1,1"
+        "textureOffset": "896,256",
+        "textureSize": "32,16,16"
       },
       {
         "size": "3,1,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,13,-7.5",
+        "position": "-1.5,13,7",
         "rotation": "0,0,0",
-        "textureOffset": "38,17",
-        "textureSize": "3,1,1"
+        "textureOffset": "608,272",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,2,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,12.5,-7",
+        "position": "-1.5,12.5,6.5",
         "rotation": "0,0,0",
-        "textureOffset": "0,18",
-        "textureSize": "3,2,1"
+        "textureOffset": "0,288",
+        "textureSize": "48,32,16"
       },
       {
         "size": "3,0.5,1",
         "origin": "0,0,0",
-        "position": "-1.5,14.5,-7",
+        "position": "-1.5,14.5,6",
         "rotation": "0,0,0",
-        "textureOffset": "8,18",
-        "textureSize": "3,1,1"
+        "textureOffset": "128,288",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,1",
         "origin": "0,0,0",
-        "position": "-1.5,12,-7",
+        "position": "-1.5,12,6",
         "rotation": "0,0,0",
-        "textureOffset": "16,18",
-        "textureSize": "3,1,1"
+        "textureOffset": "256,288",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,2.5",
         "origin": "0,0,0",
-        "position": "-1.5,15,-6.5",
+        "position": "-1.5,15,4",
         "rotation": "0,0,0",
-        "textureOffset": "24,18",
-        "textureSize": "3,1,3"
+        "textureOffset": "384,288",
+        "textureSize": "48,16,48"
       },
       {
         "size": "3,0.5,3",
         "origin": "0,0,0",
-        "position": "-1.5,11.5,-7",
+        "position": "-1.5,11.5,4",
         "rotation": "0,0,0",
-        "textureOffset": "46,18",
-        "textureSize": "3,1,3"
+        "textureOffset": "736,288",
+        "textureSize": "48,16,48"
       },
       {
         "size": "3,0.5,1.5",
         "origin": "0,0,0",
-        "position": "-1.5,12,-5",
+        "position": "-1.5,12,3.5",
         "rotation": "0,0,0",
-        "textureOffset": "36,19",
-        "textureSize": "3,1,2"
+        "textureOffset": "576,304",
+        "textureSize": "48,16,32"
       },
       {
         "size": "3,1,1",
         "origin": "0,0,0",
-        "position": "-1.5,12.5,-4",
+        "position": "-1.5,12.5,3",
         "rotation": "0,0,0",
-        "textureOffset": "55,18",
-        "textureSize": "3,1,1"
+        "textureOffset": "880,288",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,2.5",
         "origin": "0,0,0",
-        "position": "-1.5,14.5,-5",
+        "position": "-1.5,14.5,2.5",
         "rotation": "0,0,0",
-        "textureOffset": "8,20",
-        "textureSize": "3,1,3"
+        "textureOffset": "128,320",
+        "textureSize": "48,16,48"
       },
       {
         "size": "3,0.5,1.5",
         "origin": "0,0,0",
-        "position": "-1.5,13.5,-4",
+        "position": "-1.5,13.5,2.5",
         "rotation": "0,0,0",
-        "textureOffset": "20,22",
-        "textureSize": "3,1,2"
+        "textureOffset": "320,352",
+        "textureSize": "48,16,32"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,10,-3",
+        "position": "-1.5,10,2.5",
         "rotation": "0,0,0",
-        "textureOffset": "0,21",
-        "textureSize": "3,1,1"
+        "textureOffset": "0,336",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,2.5",
         "origin": "0,0,0",
-        "position": "-1.5,14,-4.5",
+        "position": "-1.5,14,2",
         "rotation": "0,0,0",
-        "textureOffset": "30,22",
-        "textureSize": "3,1,3"
+        "textureOffset": "480,352",
+        "textureSize": "48,16,48"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,12.5,-2",
+        "position": "-1.5,12.5,1.5",
         "rotation": "0,0,0",
-        "textureOffset": "39,22",
-        "textureSize": "3,1,1"
+        "textureOffset": "624,352",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,6.5,-2",
+        "position": "-1.5,6.5,1.5",
         "rotation": "0,0,0",
-        "textureOffset": "47,22",
-        "textureSize": "3,1,1"
+        "textureOffset": "752,352",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,14,-1",
+        "position": "-1.5,14,0.5",
         "rotation": "0,0,0",
-        "textureOffset": "55,22",
-        "textureSize": "3,1,1"
+        "textureOffset": "880,352",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,5.5,-1",
+        "position": "-1.5,5.5,0.5",
         "rotation": "0,0,0",
-        "textureOffset": "0,23",
-        "textureSize": "3,1,1"
+        "textureOffset": "0,368",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,4,0.5",
+        "position": "-1.5,4,-1",
         "rotation": "0,0,0",
-        "textureOffset": "8,24",
-        "textureSize": "3,1,1"
+        "textureOffset": "128,384",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,2,0.5",
+        "position": "-1.5,2,-1",
         "rotation": "0,0,0",
-        "textureOffset": "42,24",
-        "textureSize": "3,1,1"
+        "textureOffset": "672,384",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,1,1",
+        "position": "-1.5,1,-1.5",
         "rotation": "0,0,0",
-        "textureOffset": "50,24",
-        "textureSize": "3,1,1"
+        "textureOffset": "800,384",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,0.5,1.5",
+        "position": "-1.5,0.5,-2",
         "rotation": "0,0,0",
-        "textureOffset": "0,25",
-        "textureSize": "3,1,1"
+        "textureOffset": "0,400",
+        "textureSize": "48,16,16"
       },
       {
         "size": "0.5,0.5,1",
         "origin": "0,0,0",
-        "position": "1,13.5,1.5",
+        "position": "-1.5,13.5,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "31,10",
-        "textureSize": "1,1,1"
+        "textureOffset": "496,160",
+        "textureSize": "16,16,16"
       },
       {
         "size": "6,0.5,1.5",
         "origin": "0,0,0",
-        "position": "-4.5,13,1.5",
+        "position": "-1.5,13,-3",
         "rotation": "0,0,0",
-        "textureOffset": "8,26",
-        "textureSize": "6,1,2"
+        "textureOffset": "128,416",
+        "textureSize": "96,16,32"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,0,2.5",
+        "position": "-1.5,0,-3",
         "rotation": "0,0,0",
-        "textureOffset": "22,25",
-        "textureSize": "3,1,1"
+        "textureOffset": "352,400",
+        "textureSize": "48,16,16"
       },
       {
         "size": "6,0.5,2",
         "origin": "0,0,0",
-        "position": "-4.5,12.5,1.5",
+        "position": "-1.5,12.5,-3.5",
         "rotation": "0,0,0",
-        "textureOffset": "30,26",
-        "textureSize": "6,1,2"
+        "textureOffset": "480,416",
+        "textureSize": "96,16,32"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,10.5,4",
+        "position": "-1.5,10.5,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "44,26",
-        "textureSize": "3,1,1"
+        "textureOffset": "704,416",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,6,5",
+        "position": "-1.5,6,-5.5",
         "rotation": "0,0,0",
-        "textureOffset": "52,26",
-        "textureSize": "3,1,1"
+        "textureOffset": "832,416",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,0,5",
+        "position": "-1.5,0,-5.5",
         "rotation": "0,0,0",
-        "textureOffset": "0,27",
-        "textureSize": "3,1,1"
+        "textureOffset": "0,432",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,5.5,6",
+        "position": "-1.5,5.5,-6.5",
         "rotation": "0,0,0",
-        "textureOffset": "46,28",
-        "textureSize": "3,1,1"
+        "textureOffset": "736,448",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,1,6",
+        "position": "-1.5,1,-6.5",
         "rotation": "0,0,0",
-        "textureOffset": "54,28",
-        "textureSize": "3,1,1"
+        "textureOffset": "864,448",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,1,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,1.5,6.5",
+        "position": "-1.5,1.5,-7",
         "rotation": "0,0,0",
-        "textureOffset": "0,29",
-        "textureSize": "3,1,1"
+        "textureOffset": "0,464",
+        "textureSize": "48,16,16"
       },
       {
         "size": "3,2,0.5",
         "origin": "0,0,0",
-        "position": "-1.5,3,7",
+        "position": "-1.5,3,-7.5",
         "rotation": "0,0,0",
-        "textureOffset": "8,29",
-        "textureSize": "3,2,1"
+        "textureOffset": "128,464",
+        "textureSize": "48,32,16"
       },
       {
         "size": "4,0.5,1",
         "origin": "0,0,0",
-        "position": "-2,14.5,-6",
+        "position": "-2,14.5,5",
         "rotation": "0,0,0",
-        "textureOffset": "16,29",
-        "textureSize": "4,1,1"
+        "textureOffset": "256,464",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,0.5,1",
         "origin": "0,0,0",
-        "position": "-2,12,-6",
+        "position": "-2,12,5",
         "rotation": "0,0,0",
-        "textureOffset": "26,29",
-        "textureSize": "4,1,1"
+        "textureOffset": "416,464",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,0.5,2",
         "origin": "0,0,0",
-        "position": "-2,14,-6.5",
+        "position": "-2,14,4.5",
         "rotation": "0,0,0",
-        "textureOffset": "36,30",
-        "textureSize": "4,1,2"
+        "textureOffset": "576,480",
+        "textureSize": "64,16,32"
       },
       {
         "size": "4,1.5,2.5",
         "origin": "0,0,0",
-        "position": "-2,12.5,-6.5",
+        "position": "-2,12.5,4",
         "rotation": "0,0,0",
-        "textureOffset": "48,30",
-        "textureSize": "4,2,3"
+        "textureOffset": "768,480",
+        "textureSize": "64,32,48"
       },
       {
         "size": "4,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2,11.5,-2.5",
+        "position": "-2,11.5,2",
         "rotation": "0,0,0",
-        "textureOffset": "16,31",
-        "textureSize": "4,1,1"
+        "textureOffset": "256,496",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2,7.5,-2.5",
+        "position": "-2,7.5,2",
         "rotation": "0,0,0",
-        "textureOffset": "26,31",
-        "textureSize": "4,1,1"
+        "textureOffset": "416,496",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2,12,-2",
+        "position": "-2,12,1.5",
         "rotation": "0,0,0",
-        "textureOffset": "0,32",
-        "textureSize": "4,1,1"
+        "textureOffset": "0,512",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2,13,-1.5",
+        "position": "-2,13,1",
         "rotation": "0,0,0",
-        "textureOffset": "10,33",
-        "textureSize": "4,1,1"
+        "textureOffset": "160,528",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2,6,-1.5",
+        "position": "-2,6,1",
         "rotation": "0,0,0",
-        "textureOffset": "20,33",
-        "textureSize": "4,1,1"
-      },
-      {
-        "size": "4,0.5,0.5",
-        "origin": "0,0,0",
-        "position": "-2,13.5,-1",
-        "rotation": "0,0,0",
-        "textureOffset": "30,33",
-        "textureSize": "4,1,1"
-      },
-      {
-        "size": "4,0.5,0.5",
-        "origin": "0,0,0",
-        "position": "-2,5.5,-0.5",
-        "rotation": "0,0,0",
-        "textureOffset": "0,34",
-        "textureSize": "4,1,1"
-      },
-      {
-        "size": "1,0.5,1",
-        "origin": "0,0,0",
-        "position": "1,14,-0.5",
-        "rotation": "0,0,0",
-        "textureOffset": "60,10",
-        "textureSize": "1,1,1"
-      },
-      {
-        "size": "4,0.5,0.5",
-        "origin": "0,0,0",
-        "position": "-2,5,0",
-        "rotation": "0,0,0",
-        "textureOffset": "10,35",
-        "textureSize": "4,1,1"
+        "textureOffset": "320,528",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,0.5,0.5",
         "origin": "0,0,0",
         "position": "-2,13.5,0.5",
         "rotation": "0,0,0",
-        "textureOffset": "20,35",
-        "textureSize": "4,1,1"
+        "textureOffset": "480,528",
+        "textureSize": "64,16,16"
+      },
+      {
+        "size": "4,0.5,0.5",
+        "origin": "0,0,0",
+        "position": "-2,5.5,0",
+        "rotation": "0,0,0",
+        "textureOffset": "0,544",
+        "textureSize": "64,16,16"
+      },
+      {
+        "size": "1,0.5,1",
+        "origin": "0,0,0",
+        "position": "-2,14,-0.5",
+        "rotation": "0,0,0",
+        "textureOffset": "960,160",
+        "textureSize": "16,16,16"
+      },
+      {
+        "size": "4,0.5,0.5",
+        "origin": "0,0,0",
+        "position": "-2,5,-0.5",
+        "rotation": "0,0,0",
+        "textureOffset": "160,560",
+        "textureSize": "64,16,16"
+      },
+      {
+        "size": "4,0.5,0.5",
+        "origin": "0,0,0",
+        "position": "-2,13.5,-1",
+        "rotation": "0,0,0",
+        "textureOffset": "320,560",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,1,0.5",
         "origin": "0,0,0",
-        "position": "-2,4.5,0.5",
+        "position": "-2,4.5,-1",
         "rotation": "0,0,0",
-        "textureOffset": "30,35",
-        "textureSize": "4,1,1"
+        "textureOffset": "480,560",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,1.5,0.5",
         "origin": "0,0,0",
-        "position": "-2,2.5,0.5",
+        "position": "-2,2.5,-1",
         "rotation": "0,0,0",
-        "textureOffset": "40,35",
-        "textureSize": "4,2,1"
+        "textureOffset": "640,560",
+        "textureSize": "64,32,16"
       },
       {
         "size": "6,1.5,0.5",
         "origin": "0,0,0",
-        "position": "-4,12.5,1",
+        "position": "-2,12.5,-1.5",
         "rotation": "0,0,0",
-        "textureOffset": "50,35",
-        "textureSize": "6,2,1"
+        "textureOffset": "800,560",
+        "textureSize": "96,32,16"
       },
       {
         "size": "4,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2,1.5,1",
+        "position": "-2,1.5,-1.5",
         "rotation": "0,0,0",
-        "textureOffset": "0,36",
-        "textureSize": "4,1,1"
+        "textureOffset": "0,576",
+        "textureSize": "64,16,16"
       },
       {
         "size": "0.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "1.5,14.5,1.5",
+        "position": "-2,14.5,-2",
         "rotation": "0,0,0",
-        "textureOffset": "6,11",
-        "textureSize": "1,1,1"
+        "textureOffset": "96,176",
+        "textureSize": "16,16,16"
       },
       {
         "size": "4,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2,0.5,2",
+        "position": "-2,0.5,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "10,37",
-        "textureSize": "4,1,1"
+        "textureOffset": "160,592",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2,11.5,3.5",
+        "position": "-2,11.5,-4",
         "rotation": "0,0,0",
-        "textureOffset": "20,37",
-        "textureSize": "4,1,1"
+        "textureOffset": "320,592",
+        "textureSize": "64,16,16"
       },
       {
         "size": "7,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-5,6.5,3.5",
+        "position": "-2,6.5,-4",
         "rotation": "0,0,0",
-        "textureOffset": "30,38",
-        "textureSize": "7,1,1"
+        "textureOffset": "480,608",
+        "textureSize": "112,16,16"
       },
       {
         "size": "4,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2,10,4",
+        "position": "-2,10,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "0,38",
-        "textureSize": "4,1,1"
+        "textureOffset": "0,608",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2,7.5,4",
+        "position": "-2,7.5,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "46,38",
-        "textureSize": "4,1,1"
+        "textureOffset": "736,608",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,0.5,1",
         "origin": "0,0,0",
-        "position": "-2,6,4",
+        "position": "-2,6,-5",
         "rotation": "0,0,0",
-        "textureOffset": "10,39",
-        "textureSize": "4,1,1"
+        "textureOffset": "160,624",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,0.5,2",
         "origin": "0,0,0",
-        "position": "-2,0,3",
+        "position": "-2,0,-5",
         "rotation": "0,0,0",
-        "textureOffset": "20,40",
-        "textureSize": "4,1,2"
+        "textureOffset": "320,640",
+        "textureSize": "64,16,32"
       },
       {
         "size": "4,0.5,1",
         "origin": "0,0,0",
-        "position": "-2,0.5,5",
+        "position": "-2,0.5,-6",
         "rotation": "0,0,0",
-        "textureOffset": "0,40",
-        "textureSize": "4,1,1"
+        "textureOffset": "0,640",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2,1.5,6",
+        "position": "-2,1.5,-6.5",
         "rotation": "0,0,0",
-        "textureOffset": "30,40",
-        "textureSize": "4,1,1"
+        "textureOffset": "480,640",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,1,0.5",
         "origin": "0,0,0",
-        "position": "-2,4.5,6.5",
+        "position": "-2,4.5,-7",
         "rotation": "0,0,0",
-        "textureOffset": "40,40",
-        "textureSize": "4,1,1"
+        "textureOffset": "640,640",
+        "textureSize": "64,16,16"
       },
       {
         "size": "4,1,0.5",
         "origin": "0,0,0",
-        "position": "-2,2.5,6.5",
+        "position": "-2,2.5,-7",
         "rotation": "0,0,0",
-        "textureOffset": "50,40",
-        "textureSize": "4,1,1"
+        "textureOffset": "800,640",
+        "textureSize": "64,16,16"
       },
       {
         "size": "5,3.5,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,8,-2.5",
+        "position": "-2.5,8,2",
         "rotation": "0,0,0",
-        "textureOffset": "0,42",
-        "textureSize": "5,4,1"
+        "textureOffset": "0,672",
+        "textureSize": "80,64,16"
       },
       {
         "size": "5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,11.5,-2",
+        "position": "-2.5,11.5,1.5",
         "rotation": "0,0,0",
-        "textureOffset": "32,42",
-        "textureSize": "5,1,1"
+        "textureOffset": "512,672",
+        "textureSize": "80,16,16"
       },
       {
         "size": "5,1,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,7,-2",
+        "position": "-2.5,7,1.5",
         "rotation": "0,0,0",
-        "textureOffset": "44,42",
-        "textureSize": "5,1,1"
+        "textureOffset": "704,672",
+        "textureSize": "80,16,16"
       },
       {
         "size": "5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,12.5,-1.5",
+        "position": "-2.5,12.5,1",
         "rotation": "0,0,0",
-        "textureOffset": "12,43",
-        "textureSize": "5,1,1"
+        "textureOffset": "192,688",
+        "textureSize": "80,16,16"
       },
       {
         "size": "5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,6.5,-1.5",
+        "position": "-2.5,6.5,1",
         "rotation": "0,0,0",
-        "textureOffset": "24,44",
-        "textureSize": "5,1,1"
+        "textureOffset": "384,704",
+        "textureSize": "80,16,16"
       },
       {
         "size": "5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,13,-1",
+        "position": "-2.5,13,0.5",
         "rotation": "0,0,0",
-        "textureOffset": "36,44",
-        "textureSize": "5,1,1"
+        "textureOffset": "576,704",
+        "textureSize": "80,16,16"
       },
       {
         "size": "5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,6,-1",
+        "position": "-2.5,6,0.5",
         "rotation": "0,0,0",
-        "textureOffset": "48,44",
-        "textureSize": "5,1,1"
+        "textureOffset": "768,704",
+        "textureSize": "80,16,16"
       },
       {
         "size": "5,0.5,1",
         "origin": "0,0,0",
         "position": "-2.5,13.5,-0.5",
         "rotation": "0,0,0",
-        "textureOffset": "12,45",
-        "textureSize": "5,1,1"
+        "textureOffset": "192,720",
+        "textureSize": "80,16,16"
       },
       {
         "size": "5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,5.5,0",
+        "position": "-2.5,5.5,-0.5",
         "rotation": "0,0,0",
-        "textureOffset": "24,46",
-        "textureSize": "5,1,1"
+        "textureOffset": "384,736",
+        "textureSize": "80,16,16"
       },
       {
         "size": "5,3.5,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,2,1",
+        "position": "-2.5,2,-1.5",
         "rotation": "0,0,0",
-        "textureOffset": "36,46",
-        "textureSize": "5,4,1"
+        "textureOffset": "576,736",
+        "textureSize": "80,64,16"
       },
       {
         "size": "5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,1.5,1.5",
+        "position": "-2.5,1.5,-2",
         "rotation": "0,0,0",
-        "textureOffset": "48,46",
-        "textureSize": "5,1,1"
+        "textureOffset": "768,736",
+        "textureSize": "80,16,16"
       },
       {
         "size": "5,0.5,1",
         "origin": "0,0,0",
-        "position": "-2.5,1,1.5",
+        "position": "-2.5,1,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "0,47",
-        "textureSize": "5,1,1"
+        "textureOffset": "0,752",
+        "textureSize": "80,16,16"
       },
       {
         "size": "5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,11,3.5",
+        "position": "-2.5,11,-4",
         "rotation": "0,0,0",
-        "textureOffset": "12,47",
-        "textureSize": "5,1,1"
+        "textureOffset": "192,752",
+        "textureSize": "80,16,16"
       },
       {
         "size": "7.5,0.5,1",
         "origin": "0,0,0",
-        "position": "-5,7.5,3",
+        "position": "-2.5,7.5,-4",
         "rotation": "0,0,0",
-        "textureOffset": "0,49",
-        "textureSize": "8,1,1"
+        "textureOffset": "0,784",
+        "textureSize": "128,16,16"
       },
       {
         "size": "7.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-5,6,3.5",
+        "position": "-2.5,6,-4",
         "rotation": "0,0,0",
-        "textureOffset": "18,49",
-        "textureSize": "8,1,1"
+        "textureOffset": "288,784",
+        "textureSize": "128,16,16"
       },
       {
         "size": "5,2,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,8,4",
+        "position": "-2.5,8,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "48,48",
-        "textureSize": "5,2,1"
+        "textureOffset": "768,768",
+        "textureSize": "80,32,16"
       },
       {
         "size": "0.5,0.5,1",
         "origin": "0,0,0",
-        "position": "2,6.5,3.5",
+        "position": "-2.5,6.5,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "6,13",
-        "textureSize": "1,1,1"
+        "textureOffset": "96,208",
+        "textureSize": "16,16,16"
       },
       {
         "size": "5,0.5,2.5",
         "origin": "0,0,0",
-        "position": "-2.5,0.5,2.5",
+        "position": "-2.5,0.5,-5",
         "rotation": "0,0,0",
-        "textureOffset": "0,51",
-        "textureSize": "5,1,3"
+        "textureOffset": "0,816",
+        "textureSize": "80,16,48"
       },
       {
         "size": "5,0.5,1.5",
         "origin": "0,0,0",
-        "position": "-2.5,5.5,4.5",
+        "position": "-2.5,5.5,-6",
         "rotation": "0,0,0",
-        "textureOffset": "13,51",
-        "textureSize": "5,1,2"
+        "textureOffset": "208,816",
+        "textureSize": "80,16,32"
       },
       {
         "size": "5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,1.5,5.5",
+        "position": "-2.5,1.5,-6",
         "rotation": "0,0,0",
-        "textureOffset": "25,51",
-        "textureSize": "5,1,1"
+        "textureOffset": "400,816",
+        "textureSize": "80,16,16"
       },
       {
         "size": "5,0.5,1",
         "origin": "0,0,0",
-        "position": "-2.5,1,5",
+        "position": "-2.5,1,-6",
         "rotation": "0,0,0",
-        "textureOffset": "37,51",
-        "textureSize": "5,1,1"
+        "textureOffset": "592,816",
+        "textureSize": "80,16,16"
       },
       {
         "size": "5,1,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,4.5,6",
+        "position": "-2.5,4.5,-6.5",
         "rotation": "0,0,0",
-        "textureOffset": "49,51",
-        "textureSize": "5,1,1"
+        "textureOffset": "784,816",
+        "textureSize": "80,16,16"
       },
       {
         "size": "5,1.5,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,2,6",
+        "position": "-2.5,2,-6.5",
         "rotation": "0,0,0",
-        "textureOffset": "27,53",
-        "textureSize": "5,2,1"
+        "textureOffset": "432,848",
+        "textureSize": "80,32,16"
       },
       {
         "size": "5,1,0.5",
         "origin": "0,0,0",
-        "position": "-2.5,3.5,6.5",
+        "position": "-2.5,3.5,-7",
         "rotation": "0,0,0",
-        "textureOffset": "39,53",
-        "textureSize": "5,1,1"
+        "textureOffset": "624,848",
+        "textureSize": "80,16,16"
       },
       {
         "size": "6,3.5,0.5",
         "origin": "0,0,0",
-        "position": "-3,8,-2",
+        "position": "-3,8,1.5",
         "rotation": "0,0,0",
-        "textureOffset": "0,55",
-        "textureSize": "6,4,1"
+        "textureOffset": "0,880",
+        "textureSize": "96,64,16"
       },
       {
         "size": "6,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-3,11.5,-1.5",
+        "position": "-3,11.5,1",
         "rotation": "0,0,0",
-        "textureOffset": "39,55",
-        "textureSize": "6,1,1"
+        "textureOffset": "624,880",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,1,0.5",
         "origin": "0,0,0",
-        "position": "-3,7,-1.5",
+        "position": "-3,7,1",
         "rotation": "0,0,0",
-        "textureOffset": "14,56",
-        "textureSize": "6,1,1"
+        "textureOffset": "224,896",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,0.5,1",
         "origin": "0,0,0",
-        "position": "-3,12,-1.5",
+        "position": "-3,12,0.5",
         "rotation": "0,0,0",
-        "textureOffset": "28,57",
-        "textureSize": "6,1,1"
+        "textureOffset": "448,912",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,0.5,1",
         "origin": "0,0,0",
-        "position": "-3,12.5,-1",
+        "position": "-3,12.5,0",
         "rotation": "0,0,0",
-        "textureOffset": "42,57",
-        "textureSize": "6,1,1"
+        "textureOffset": "672,912",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,0.5,1",
         "origin": "0,0,0",
-        "position": "-3,6.5,-1",
+        "position": "-3,6.5,0",
         "rotation": "0,0,0",
-        "textureOffset": "14,58",
-        "textureSize": "6,1,1"
+        "textureOffset": "224,928",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,0.5,1",
         "origin": "0,0,0",
         "position": "-3,13,-0.5",
         "rotation": "0,0,0",
-        "textureOffset": "28,59",
-        "textureSize": "6,1,1"
+        "textureOffset": "448,944",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,0.5,1",
         "origin": "0,0,0",
         "position": "-3,6,-0.5",
         "rotation": "0,0,0",
-        "textureOffset": "42,59",
-        "textureSize": "6,1,1"
+        "textureOffset": "672,944",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,0.5,1",
         "origin": "0,0,0",
-        "position": "-3,5.5,0.5",
+        "position": "-3,5.5,-1.5",
         "rotation": "0,0,0",
-        "textureOffset": "0,60",
-        "textureSize": "6,1,1"
+        "textureOffset": "0,960",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,2.5,0.5",
         "origin": "0,0,0",
-        "position": "-3,2,1.5",
+        "position": "-3,2,-2",
         "rotation": "0,0,0",
-        "textureOffset": "14,60",
-        "textureSize": "6,3,1"
+        "textureOffset": "224,960",
+        "textureSize": "96,48,16"
       },
       {
         "size": "6,0.5,1",
         "origin": "0,0,0",
-        "position": "-3,4.5,1.5",
+        "position": "-3,4.5,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "28,61",
-        "textureSize": "6,1,1"
+        "textureOffset": "448,976",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-3,5.5,2.5",
+        "position": "-3,5.5,-3",
         "rotation": "0,0,0",
-        "textureOffset": "42,61",
-        "textureSize": "6,1,1"
+        "textureOffset": "672,976",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,0.5,1.5",
         "origin": "0,0,0",
-        "position": "-3,5,1.5",
+        "position": "-3,5,-3",
         "rotation": "0,0,0",
-        "textureOffset": "64,0",
-        "textureSize": "6,1,2"
+        "textureOffset": "1024,0",
+        "textureSize": "96,16,32"
       },
       {
         "size": "6,0.5,1",
         "origin": "0,0,0",
-        "position": "-3,1.5,2",
+        "position": "-3,1.5,-3",
         "rotation": "0,0,0",
-        "textureOffset": "78,0",
-        "textureSize": "6,1,1"
+        "textureOffset": "1248,0",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-3,11.5,3",
+        "position": "-3,11.5,-3.5",
         "rotation": "0,0,0",
-        "textureOffset": "92,0",
-        "textureSize": "6,1,1"
+        "textureOffset": "1472,0",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-3,10.5,3.5",
+        "position": "-3,10.5,-4",
         "rotation": "0,0,0",
-        "textureOffset": "106,0",
-        "textureSize": "6,1,1"
+        "textureOffset": "1696,0",
+        "textureSize": "96,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "2,15,4",
+        "position": "-3,15,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "120,0",
-        "textureSize": "1,1,1"
+        "textureOffset": "1920,0",
+        "textureSize": "16,16,16"
       },
       {
         "size": "0.5,0.5,1",
         "origin": "0,0,0",
-        "position": "2.5,6,3.5",
+        "position": "-3,6,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "124,0",
-        "textureSize": "1,1,1"
+        "textureOffset": "1984,0",
+        "textureSize": "16,16,16"
       },
       {
         "size": "0.5,1,0.5",
         "origin": "0,0,0",
-        "position": "2.5,5.5,4.5",
+        "position": "-3,5.5,-5",
         "rotation": "0,0,0",
-        "textureOffset": "80,2",
-        "textureSize": "1,1,1"
+        "textureOffset": "1280,32",
+        "textureSize": "16,16,16"
       },
       {
         "size": "6,0.5,2.5",
         "origin": "0,0,0",
-        "position": "-3,1,2.5",
+        "position": "-3,1,-5",
         "rotation": "0,0,0",
-        "textureOffset": "84,2",
-        "textureSize": "6,1,3"
+        "textureOffset": "1344,32",
+        "textureSize": "96,16,48"
       },
       {
         "size": "0.5,0.5,2",
         "origin": "0,0,0",
-        "position": "2.5,6.5,3.5",
+        "position": "-3,6.5,-5.5",
         "rotation": "0,0,0",
-        "textureOffset": "99,2",
-        "textureSize": "1,1,2"
+        "textureOffset": "1584,32",
+        "textureSize": "16,16,32"
       },
       {
         "size": "6,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-3,5,5",
+        "position": "-3,5,-5.5",
         "rotation": "0,0,0",
-        "textureOffset": "103,2",
-        "textureSize": "6,1,1"
+        "textureOffset": "1648,32",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,0.5,1",
         "origin": "0,0,0",
-        "position": "-3,1.5,4.5",
+        "position": "-3,1.5,-5.5",
         "rotation": "0,0,0",
-        "textureOffset": "64,3",
-        "textureSize": "6,1,1"
+        "textureOffset": "1024,48",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,1,0.5",
         "origin": "0,0,0",
-        "position": "-3,4.5,5.5",
+        "position": "-3,4.5,-6",
         "rotation": "0,0,0",
-        "textureOffset": "105,4",
-        "textureSize": "6,1,1"
+        "textureOffset": "1680,64",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,1,0.5",
         "origin": "0,0,0",
-        "position": "-3,2.5,5.5",
+        "position": "-3,2.5,-6",
         "rotation": "0,0,0",
-        "textureOffset": "64,5",
-        "textureSize": "6,1,1"
+        "textureOffset": "1024,80",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,0.5,1",
         "origin": "0,0,0",
-        "position": "-3,2,5",
+        "position": "-3,2,-6",
         "rotation": "0,0,0",
-        "textureOffset": "78,6",
-        "textureSize": "6,1,1"
+        "textureOffset": "1248,96",
+        "textureSize": "96,16,16"
       },
       {
         "size": "6,1,1",
         "origin": "0,0,0",
-        "position": "-3,3.5,5.5",
+        "position": "-3,3.5,-6.5",
         "rotation": "0,0,0",
-        "textureOffset": "92,6",
-        "textureSize": "6,1,1"
+        "textureOffset": "1472,96",
+        "textureSize": "96,16,16"
       },
       {
         "size": "7,2.5,0.5",
         "origin": "0,0,0",
-        "position": "-3.5,8.5,-1.5",
+        "position": "-3.5,8.5,1",
         "rotation": "0,0,0",
-        "textureOffset": "106,6",
-        "textureSize": "7,3,1"
+        "textureOffset": "1696,96",
+        "textureSize": "112,48,16"
       },
       {
         "size": "7,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-3.5,11.5,-1",
+        "position": "-3.5,11.5,0.5",
         "rotation": "0,0,0",
-        "textureOffset": "64,8",
-        "textureSize": "7,1,1"
+        "textureOffset": "1024,128",
+        "textureSize": "112,16,16"
       },
       {
         "size": "7,0.5,1",
         "origin": "0,0,0",
-        "position": "-3.5,11,-1.5",
+        "position": "-3.5,11,0.5",
         "rotation": "0,0,0",
-        "textureOffset": "80,8",
-        "textureSize": "7,1,1"
+        "textureOffset": "1280,128",
+        "textureSize": "112,16,16"
       },
       {
         "size": "7,0.5,1",
         "origin": "0,0,0",
-        "position": "-3.5,8,-1.5",
+        "position": "-3.5,8,0.5",
         "rotation": "0,0,0",
-        "textureOffset": "64,10",
-        "textureSize": "7,1,1"
+        "textureOffset": "1024,160",
+        "textureSize": "112,16,16"
       },
       {
         "size": "7,0.5,1",
         "origin": "0,0,0",
-        "position": "-3.5,7.5,-1",
+        "position": "-3.5,7.5,0",
         "rotation": "0,0,0",
-        "textureOffset": "80,10",
-        "textureSize": "7,1,1"
+        "textureOffset": "1280,160",
+        "textureSize": "112,16,16"
       },
       {
         "size": "7,0.5,1",
         "origin": "0,0,0",
         "position": "-3.5,12,-0.5",
         "rotation": "0,0,0",
-        "textureOffset": "96,10",
-        "textureSize": "7,1,1"
+        "textureOffset": "1536,160",
+        "textureSize": "112,16,16"
       },
       {
         "size": "7,0.5,1.5",
         "origin": "0,0,0",
-        "position": "-3.5,7,-1",
+        "position": "-3.5,7,-0.5",
         "rotation": "0,0,0",
-        "textureOffset": "61,12",
-        "textureSize": "7,1,2"
+        "textureOffset": "976,192",
+        "textureSize": "112,16,32"
       },
       {
         "size": "7,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-3.5,13,0.5",
+        "position": "-3.5,13,-1",
         "rotation": "0,0,0",
-        "textureOffset": "112,10",
-        "textureSize": "7,1,1"
+        "textureOffset": "1792,160",
+        "textureSize": "112,16,16"
       },
       {
         "size": "7,0.5,1",
         "origin": "0,0,0",
-        "position": "-3.5,12.5,0",
+        "position": "-3.5,12.5,-1",
         "rotation": "0,0,0",
-        "textureOffset": "77,12",
-        "textureSize": "7,1,1"
+        "textureOffset": "1232,192",
+        "textureSize": "112,16,16"
       },
       {
         "size": "7,0.5,1",
         "origin": "0,0,0",
-        "position": "-3.5,6.5,0",
+        "position": "-3.5,6.5,-1",
         "rotation": "0,0,0",
-        "textureOffset": "93,12",
-        "textureSize": "7,1,1"
+        "textureOffset": "1488,192",
+        "textureSize": "112,16,16"
       },
       {
         "size": "1.5,1,0.5",
         "origin": "0,0,0",
-        "position": "2,15,1",
+        "position": "-3.5,15,-1.5",
         "rotation": "0,0,0",
-        "textureOffset": "117,2",
-        "textureSize": "2,1,1"
+        "textureOffset": "1872,32",
+        "textureSize": "32,16,16"
       },
       {
         "size": "7,0.5,1",
         "origin": "0,0,0",
-        "position": "-3.5,6,0.5",
+        "position": "-3.5,6,-1.5",
         "rotation": "0,0,0",
-        "textureOffset": "109,12",
-        "textureSize": "7,1,1"
+        "textureOffset": "1744,192",
+        "textureSize": "112,16,16"
       },
       {
         "size": "7,0.5,1",
         "origin": "0,0,0",
-        "position": "-3.5,5.5,1.5",
+        "position": "-3.5,5.5,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "79,14",
-        "textureSize": "7,1,1"
+        "textureOffset": "1264,224",
+        "textureSize": "112,16,16"
       },
       {
         "size": "7,1,0.5",
         "origin": "0,0,0",
-        "position": "-3.5,10.5,3",
+        "position": "-3.5,10.5,-3.5",
         "rotation": "0,0,0",
-        "textureOffset": "95,14",
-        "textureSize": "7,1,1"
+        "textureOffset": "1520,224",
+        "textureSize": "112,16,16"
       },
       {
         "size": "7,1,1.5",
         "origin": "0,0,0",
-        "position": "-3.5,3,2",
+        "position": "-3.5,3,-3.5",
         "rotation": "0,0,0",
-        "textureOffset": "62,16",
-        "textureSize": "7,1,2"
+        "textureOffset": "992,256",
+        "textureSize": "112,16,32"
       },
       {
         "size": "1.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "2,14,3.5",
+        "position": "-3.5,14,-4",
         "rotation": "0,0,0",
-        "textureOffset": "78,4",
-        "textureSize": "2,1,1"
+        "textureOffset": "1248,64",
+        "textureSize": "32,16,16"
       },
       {
         "size": "1,1,0.5",
         "origin": "0,0,0",
-        "position": "2.5,12.5,3.5",
+        "position": "-3.5,12.5,-4",
         "rotation": "0,0,0",
-        "textureOffset": "123,2",
-        "textureSize": "1,1,1"
+        "textureOffset": "1968,32",
+        "textureSize": "16,16,16"
       },
       {
         "size": "7,2,0.5",
         "origin": "0,0,0",
-        "position": "-3.5,8.5,3.5",
+        "position": "-3.5,8.5,-4",
         "rotation": "0,0,0",
-        "textureOffset": "111,14",
-        "textureSize": "7,2,1"
+        "textureOffset": "1776,224",
+        "textureSize": "112,32,16"
       },
       {
         "size": "7,0.5,1.5",
         "origin": "0,0,0",
-        "position": "-3.5,4.5,2.5",
+        "position": "-3.5,4.5,-4",
         "rotation": "0,0,0",
-        "textureOffset": "80,16",
-        "textureSize": "7,1,2"
+        "textureOffset": "1280,256",
+        "textureSize": "112,16,32"
       },
       {
         "size": "7,0.5,2",
         "origin": "0,0,0",
-        "position": "-3.5,4,2",
+        "position": "-3.5,4,-4",
         "rotation": "0,0,0",
-        "textureOffset": "98,17",
-        "textureSize": "7,1,2"
+        "textureOffset": "1568,272",
+        "textureSize": "112,16,32"
       },
       {
         "size": "7.5,0.5,1.5",
         "origin": "0,0,0",
-        "position": "-4,5.5,3",
+        "position": "-3.5,5.5,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "63,19",
-        "textureSize": "8,1,2"
+        "textureOffset": "1008,304",
+        "textureSize": "128,16,32"
       },
       {
         "size": "7,0.5,1.5",
         "origin": "0,0,0",
-        "position": "-3.5,1.5,3",
+        "position": "-3.5,1.5,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "83,20",
-        "textureSize": "7,1,2"
+        "textureOffset": "1328,320",
+        "textureSize": "112,16,32"
       },
       {
         "size": "0.5,0.5,1",
         "origin": "0,0,0",
-        "position": "3,8,4",
+        "position": "-3.5,8,-5",
         "rotation": "0,0,0",
-        "textureOffset": "119,4",
-        "textureSize": "1,1,1"
+        "textureOffset": "1904,64",
+        "textureSize": "16,16,16"
       },
       {
         "size": "7,0.5,2",
         "origin": "0,0,0",
-        "position": "-3.5,5,3",
+        "position": "-3.5,5,-5",
         "rotation": "0,0,0",
-        "textureOffset": "101,20",
-        "textureSize": "7,1,2"
+        "textureOffset": "1616,320",
+        "textureSize": "112,16,32"
       },
       {
         "size": "7,0.5,3",
         "origin": "0,0,0",
-        "position": "-3.5,2,2",
+        "position": "-3.5,2,-5",
         "rotation": "0,0,0",
-        "textureOffset": "63,22",
-        "textureSize": "7,1,3"
+        "textureOffset": "1008,352",
+        "textureSize": "112,16,48"
       },
       {
         "size": "0.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "3,7.5,5",
+        "position": "-3.5,7.5,-5.5",
         "rotation": "0,0,0",
-        "textureOffset": "123,4",
-        "textureSize": "1,1,1"
+        "textureOffset": "1968,64",
+        "textureSize": "16,16,16"
       },
       {
         "size": "7,2,1.5",
         "origin": "0,0,0",
-        "position": "-3.5,3,4",
+        "position": "-3.5,3,-5.5",
         "rotation": "0,0,0",
-        "textureOffset": "83,23",
-        "textureSize": "7,2,2"
+        "textureOffset": "1328,368",
+        "textureSize": "112,32,32"
       },
       {
         "size": "7,0.5,3.5",
         "origin": "0,0,0",
-        "position": "-3.5,2.5,2",
+        "position": "-3.5,2.5,-5.5",
         "rotation": "0,0,0",
-        "textureOffset": "101,23",
-        "textureSize": "7,1,4"
+        "textureOffset": "1616,368",
+        "textureSize": "112,16,64"
       },
       {
         "size": "0.5,1.5,0.5",
         "origin": "0,0,0",
-        "position": "3,6.5,5.5",
+        "position": "-3.5,6.5,-6",
         "rotation": "0,0,0",
-        "textureOffset": "122,6",
-        "textureSize": "1,2,1"
+        "textureOffset": "1952,96",
+        "textureSize": "16,32,16"
       },
       {
         "size": "8,2.5,0.5",
         "origin": "0,0,0",
-        "position": "-4,8.5,-1",
+        "position": "-4,8.5,0.5",
         "rotation": "0,0,0",
-        "textureOffset": "62,26",
-        "textureSize": "8,3,1"
+        "textureOffset": "992,416",
+        "textureSize": "128,48,16"
       },
       {
         "size": "8,3,0.5",
         "origin": "0,0,0",
-        "position": "-4,8,-0.5",
+        "position": "-4,8,0",
         "rotation": "0,0,0",
-        "textureOffset": "80,27",
-        "textureSize": "8,3,1"
+        "textureOffset": "1280,432",
+        "textureSize": "128,48,16"
       },
       {
         "size": "8,3,0.5",
         "origin": "0,0,0",
-        "position": "-4,7.5,0",
+        "position": "-4,7.5,-0.5",
         "rotation": "0,0,0",
-        "textureOffset": "98,28",
-        "textureSize": "8,3,1"
+        "textureOffset": "1568,448",
+        "textureSize": "128,48,16"
       },
       {
         "size": "8,1,1.5",
         "origin": "0,0,0",
-        "position": "-4,11,-0.5",
+        "position": "-4,11,-1",
         "rotation": "0,0,0",
-        "textureOffset": "59,30",
-        "textureSize": "8,1,2"
+        "textureOffset": "944,480",
+        "textureSize": "128,16,32"
       },
       {
         "size": "8,1.5,0.5",
         "origin": "0,0,0",
-        "position": "-4,7,0.5",
+        "position": "-4,7,-1",
         "rotation": "0,0,0",
-        "textureOffset": "79,31",
-        "textureSize": "8,2,1"
+        "textureOffset": "1264,496",
+        "textureSize": "128,32,16"
       },
       {
         "size": "2,2,0.5",
         "origin": "0,0,0",
-        "position": "2,12.5,1",
+        "position": "-4,12.5,-1.5",
         "rotation": "0,0,0",
-        "textureOffset": "116,17",
-        "textureSize": "2,2,1"
+        "textureOffset": "1856,272",
+        "textureSize": "32,32,16"
       },
       {
         "size": "2.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "1.5,15,1.5",
+        "position": "-4,15,-2",
         "rotation": "0,0,0",
-        "textureOffset": "96,8",
-        "textureSize": "3,1,1"
+        "textureOffset": "1536,128",
+        "textureSize": "48,16,16"
       },
       {
         "size": "2,0.5,1",
         "origin": "0,0,0",
-        "position": "2,14.5,1",
+        "position": "-4,14.5,-2",
         "rotation": "0,0,0",
-        "textureOffset": "122,17",
-        "textureSize": "2,1,1"
+        "textureOffset": "1952,272",
+        "textureSize": "32,16,16"
       },
       {
         "size": "8,1.5,1",
         "origin": "0,0,0",
-        "position": "-4,6.5,1",
+        "position": "-4,6.5,-2",
         "rotation": "0,0,0",
-        "textureOffset": "97,32",
-        "textureSize": "8,2,1"
+        "textureOffset": "1552,512",
+        "textureSize": "128,32,16"
       },
       {
         "size": "8,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-4,11.5,2",
+        "position": "-4,11.5,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "63,34",
-        "textureSize": "8,1,1"
+        "textureOffset": "1008,544",
+        "textureSize": "128,16,16"
       },
       {
         "size": "8,0.5,1",
         "origin": "0,0,0",
-        "position": "-4,6,1.5",
+        "position": "-4,6,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "81,35",
-        "textureSize": "8,1,1"
+        "textureOffset": "1296,560",
+        "textureSize": "128,16,16"
       },
       {
         "size": "8,2,0.5",
         "origin": "0,0,0",
-        "position": "-4,10,2.5",
+        "position": "-4,10,-3",
         "rotation": "0,0,0",
-        "textureOffset": "99,35",
-        "textureSize": "8,2,1"
+        "textureOffset": "1584,560",
+        "textureSize": "128,32,16"
       },
       {
         "size": "8,0.5,3",
         "origin": "0,0,0",
-        "position": "-4,12,0.5",
+        "position": "-4,12,-3.5",
         "rotation": "0,0,0",
-        "textureOffset": "64,37",
-        "textureSize": "8,1,3"
+        "textureOffset": "1024,592",
+        "textureSize": "128,16,48"
       },
       {
         "size": "8,2.5,0.5",
         "origin": "0,0,0",
-        "position": "-4,8,3",
+        "position": "-4,8,-3.5",
         "rotation": "0,0,0",
-        "textureOffset": "86,38",
-        "textureSize": "8,3,1"
+        "textureOffset": "1376,608",
+        "textureSize": "128,48,16"
       },
       {
         "size": "2,1,0.5",
         "origin": "0,0,0",
-        "position": "2,14.5,3.5",
+        "position": "-4,14.5,-4",
         "rotation": "0,0,0",
-        "textureOffset": "122,19",
-        "textureSize": "2,1,1"
+        "textureOffset": "1952,304",
+        "textureSize": "32,16,16"
       },
       {
         "size": "2,0.5,0.5",
         "origin": "0,0,0",
-        "position": "2,13.5,3.5",
+        "position": "-4,13.5,-4",
         "rotation": "0,0,0",
-        "textureOffset": "17,20",
-        "textureSize": "2,1,1"
+        "textureOffset": "272,320",
+        "textureSize": "32,16,16"
       },
       {
         "size": "8,1,0.5",
         "origin": "0,0,0",
-        "position": "-4,3,3.5",
+        "position": "-4,3,-4",
         "rotation": "0,0,0",
-        "textureOffset": "104,38",
-        "textureSize": "8,1,1"
+        "textureOffset": "1664,608",
+        "textureSize": "128,16,16"
       },
       {
         "size": "0.5,0.5,2",
         "origin": "0,0,0",
-        "position": "3.5,5.5,3",
+        "position": "-4,5.5,-5",
         "rotation": "0,0,0",
-        "textureOffset": "119,21",
-        "textureSize": "1,1,2"
+        "textureOffset": "1904,336",
+        "textureSize": "16,16,32"
       },
       {
         "size": "0.5,0.5,1",
         "origin": "0,0,0",
-        "position": "3.5,6.5,5.5",
+        "position": "-4,6.5,-6.5",
         "rotation": "0,0,0",
-        "textureOffset": "53,13",
-        "textureSize": "1,1,1"
+        "textureOffset": "848,208",
+        "textureSize": "16,16,16"
       },
       {
         "size": "0.5,0.5,1.5",
         "origin": "0,0,0",
-        "position": "3.5,7,5.5",
+        "position": "-4,7,-7",
         "rotation": "0,0,0",
-        "textureOffset": "119,24",
-        "textureSize": "1,1,2"
+        "textureOffset": "1904,384",
+        "textureSize": "16,16,32"
       },
       {
         "size": "9,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-4.5,10.5,0",
+        "position": "-4.5,10.5,-0.5",
         "rotation": "0,0,0",
-        "textureOffset": "104,40",
-        "textureSize": "9,1,1"
+        "textureOffset": "1664,640",
+        "textureSize": "144,16,16"
       },
       {
         "size": "9,1.5,0.5",
         "origin": "0,0,0",
-        "position": "-4.5,8.5,0.5",
+        "position": "-4.5,8.5,-1",
         "rotation": "0,0,0",
-        "textureOffset": "60,41",
-        "textureSize": "9,2,1"
+        "textureOffset": "960,656",
+        "textureSize": "144,32,16"
       },
       {
         "size": "9,0.5,1",
         "origin": "0,0,0",
-        "position": "-4.5,11.5,1",
+        "position": "-4.5,11.5,-2",
         "rotation": "0,0,0",
-        "textureOffset": "80,42",
-        "textureSize": "9,1,1"
+        "textureOffset": "1280,672",
+        "textureSize": "144,16,16"
       },
       {
         "size": "9,2,1",
         "origin": "0,0,0",
-        "position": "-4.5,8,1",
+        "position": "-4.5,8,-2",
         "rotation": "0,0,0",
-        "textureOffset": "100,42",
-        "textureSize": "9,2,1"
+        "textureOffset": "1600,672",
+        "textureSize": "144,32,16"
       },
       {
         "size": "9,0.5,1.5",
         "origin": "0,0,0",
-        "position": "-4.5,11,1",
+        "position": "-4.5,11,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "60,44",
-        "textureSize": "9,1,2"
+        "textureOffset": "960,704",
+        "textureSize": "144,16,32"
       },
       {
         "size": "9,1,2",
         "origin": "0,0,0",
-        "position": "-4.5,10,0.5",
+        "position": "-4.5,10,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "82,45",
-        "textureSize": "9,1,2"
+        "textureOffset": "1312,720",
+        "textureSize": "144,16,32"
       },
       {
         "size": "9,1.5,0.5",
         "origin": "0,0,0",
-        "position": "-4.5,8.5,2.5",
+        "position": "-4.5,8.5,-3",
         "rotation": "0,0,0",
-        "textureOffset": "104,45",
-        "textureSize": "9,2,1"
+        "textureOffset": "1664,720",
+        "textureSize": "144,32,16"
       },
       {
         "size": "9,2,1",
         "origin": "0,0,0",
-        "position": "-4.5,6.5,2",
+        "position": "-4.5,6.5,-3",
         "rotation": "0,0,0",
-        "textureOffset": "60,47",
-        "textureSize": "9,2,1"
+        "textureOffset": "960,752",
+        "textureSize": "144,32,16"
       },
       {
         "size": "3,1,1.5",
         "origin": "0,0,0",
-        "position": "1.5,14.5,2",
+        "position": "-4.5,14.5,-3.5",
         "rotation": "0,0,0",
-        "textureOffset": "116,28",
-        "textureSize": "3,1,2"
+        "textureOffset": "1856,448",
+        "textureSize": "48,16,32"
       },
       {
         "size": "3,2,2",
         "origin": "0,0,0",
-        "position": "1.5,12.5,1.5",
+        "position": "-4.5,12.5,-3.5",
         "rotation": "0,0,0",
-        "textureOffset": "116,31",
-        "textureSize": "3,2,2"
+        "textureOffset": "1856,496",
+        "textureSize": "48,32,32"
       },
       {
         "size": "9,0.5,1",
         "origin": "0,0,0",
-        "position": "-4.5,6,2.5",
+        "position": "-4.5,6,-3.5",
         "rotation": "0,0,0",
-        "textureOffset": "80,48",
-        "textureSize": "9,1,1"
+        "textureOffset": "1280,768",
+        "textureSize": "144,16,16"
       },
       {
         "size": "9,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-4.5,8,3.5",
+        "position": "-4.5,8,-4",
         "rotation": "0,0,0",
-        "textureOffset": "100,48",
-        "textureSize": "9,1,1"
+        "textureOffset": "1600,768",
+        "textureSize": "144,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "3.5,8,5.5",
+        "position": "-4.5,8,-6",
         "rotation": "0,0,0",
-        "textureOffset": "78,16",
-        "textureSize": "1,1,1"
+        "textureOffset": "1248,256",
+        "textureSize": "16,16,16"
       },
       {
         "size": "1,0.5,0.5",
         "origin": "0,0,0",
-        "position": "3.5,6,5.5",
+        "position": "-4.5,6,-6",
         "rotation": "0,0,0",
-        "textureOffset": "96,16",
-        "textureSize": "1,1,1"
+        "textureOffset": "1536,256",
+        "textureSize": "16,16,16"
       },
       {
         "size": "0.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "4,6.5,7",
+        "position": "-4.5,6.5,-7.5",
         "rotation": "0,0,0",
-        "textureOffset": "33,18",
-        "textureSize": "1,1,1"
+        "textureOffset": "528,288",
+        "textureSize": "16,16,16"
       },
       {
         "size": "10,1.5,0.5",
         "origin": "0,0,0",
-        "position": "-5,8.5,2",
+        "position": "-5,8.5,-2.5",
         "rotation": "0,0,0",
-        "textureOffset": "61,50",
-        "textureSize": "10,2,1"
+        "textureOffset": "976,800",
+        "textureSize": "160,32,16"
       },
       {
         "size": "10,0.5,0.5",
         "origin": "0,0,0",
-        "position": "-5,6.5,3",
+        "position": "-5,6.5,-3.5",
         "rotation": "0,0,0",
-        "textureOffset": "83,50",
-        "textureSize": "10,1,1"
+        "textureOffset": "1328,800",
+        "textureSize": "160,16,16"
       },
       {
         "size": "10,0.5,1.5",
         "origin": "0,0,0",
-        "position": "-5,7,3",
+        "position": "-5,7,-4.5",
         "rotation": "0,0,0",
-        "textureOffset": "83,52",
-        "textureSize": "10,1,2"
+        "textureOffset": "1328,832",
+        "textureSize": "160,16,32"
       },
       {
         "size": "2.5,0.5,2",
         "origin": "0,0,0",
-        "position": "2.5,7.5,3",
+        "position": "-5,7.5,-5",
         "rotation": "0,0,0",
-        "textureOffset": "117,35",
-        "textureSize": "3,1,2"
+        "textureOffset": "1872,560",
+        "textureSize": "48,16,32"
       },
       {
         "size": "1.5,0.5,1.5",
         "origin": "0,0,0",
-        "position": "3.5,8,4",
+        "position": "-5,8,-5.5",
         "rotation": "0,0,0",
-        "textureOffset": "120,42",
-        "textureSize": "2,1,2"
+        "textureOffset": "1920,672",
+        "textureSize": "32,16,32"
       },
       {
         "size": "2,1,2",
         "origin": "0,0,0",
-        "position": "3,6,3.5",
+        "position": "-5,6,-5.5",
         "rotation": "0,0,0",
-        "textureOffset": "120,48",
-        "textureSize": "2,1,2"
+        "textureOffset": "1920,768",
+        "textureSize": "32,16,32"
       },
       {
         "size": "0.5,0.5,0.5",
         "origin": "0,0,0",
-        "position": "4.5,7.5,6.5",
+        "position": "-5,7.5,-7",
         "rotation": "0,0,0",
-        "textureOffset": "44,19",
-        "textureSize": "1,1,1"
+        "textureOffset": "704,304",
+        "textureSize": "16,16,16"
       },
       {
         "size": "3,0.5,1",
         "origin": "0,0,0",
-        "position": "2.5,7,4.5",
+        "position": "-5.5,7,-5.5",
         "rotation": "0,0,0",
-        "textureOffset": "40,33",
-        "textureSize": "3,1,1"
+        "textureOffset": "640,528",
+        "textureSize": "48,16,16"
       },
       {
         "size": "1,0.5,1",
         "origin": "0,0,0",
-        "position": "4.5,8,5.5",
+        "position": "-5.5,8,-6.5",
         "rotation": "0,0,0",
-        "textureOffset": "81,19",
-        "textureSize": "1,1,1"
+        "textureOffset": "1296,304",
+        "textureSize": "16,16,16"
       },
       {
         "size": "2,0.5,1.5",
         "origin": "0,0,0",
-        "position": "3.5,7.5,5",
+        "position": "-5.5,7.5,-6.5",
         "rotation": "0,0,0",
-        "textureOffset": "105,50",
-        "textureSize": "2,1,2"
+        "textureOffset": "1680,800",
+        "textureSize": "32,16,32"
       },
       {
         "size": "1.5,1,1.5",
         "origin": "0,0,0",
-        "position": "4,6.5,5.5",
+        "position": "-5.5,6.5,-7",
         "rotation": "0,0,0",
-        "textureOffset": "113,51",
-        "textureSize": "2,1,2"
+        "textureOffset": "1808,816",
+        "textureSize": "32,16,32"
       }
     ]
   }
