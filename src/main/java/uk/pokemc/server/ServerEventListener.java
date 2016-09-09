@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import uk.pokemc.pokemon.charmander.EntityCharmander;
 import uk.pokemc.pokemon.entities.EntityBulbasaur;
 import uk.pokemc.pokemon.entities.EntityPikachu;
 import uk.pokemc.pokemon.entities.EntitySquirtle;
@@ -34,21 +35,26 @@ public class ServerEventListener {
 		EntitySquirtle newSq;
 		if (e.getEntity() instanceof EntityPlayer) {
 			BlockPos pos = e.getEntity().getPosition();
-
+//
 			newPika = new EntityPikachu(e.getEntity().getEntityWorld());
 			newPika.setPosition(pos.getX() + 2, pos.getY() + 1, pos.getZ() + 4);
 			e.getEntity().getEntityWorld().spawnEntityInWorld(newPika);
 			newPika.playLivingSound();
 
-			newBulba = new EntityBulbasaur(e.getEntity().getEntityWorld());
-			newBulba.setPosition(pos.getX() + 1, pos.getY() + 1, pos.getZ() - 2);
-			e.getEntity().getEntityWorld().spawnEntityInWorld(newBulba);
-			newBulba.playLivingSound();
-
-			newSq = new EntitySquirtle(e.getEntity().getEntityWorld());
-			newSq.setPosition(pos.getX() - 4, pos.getY() + 1, pos.getZ() - 2);
-			e.getEntity().getEntityWorld().spawnEntityInWorld(newSq);
-			newSq.playLivingSound();
+//			newBulba = new EntityBulbasaur(e.getEntity().getEntityWorld());
+//			newBulba.setPosition(pos.getX() + 1, pos.getY() + 1, pos.getZ() - 2);
+//			e.getEntity().getEntityWorld().spawnEntityInWorld(newBulba);
+//			newBulba.playLivingSound();
+//
+//			newSq = new EntitySquirtle(e.getEntity().getEntityWorld());
+//			newSq.setPosition(pos.getX() - 4, pos.getY() + 1, pos.getZ() - 2);
+//			e.getEntity().getEntityWorld().spawnEntityInWorld(newSq);
+//			newSq.playLivingSound();
+//			
+			EntityCharmander newCh = new EntityCharmander(e.getEntity().getEntityWorld());
+			newCh.setPosition(pos.getX() - 4, pos.getY() + 1, pos.getZ() - 2);
+			e.getEntity().getEntityWorld().spawnEntityInWorld(newCh);
+			newCh.playLivingSound();
 		}
 	}
 }

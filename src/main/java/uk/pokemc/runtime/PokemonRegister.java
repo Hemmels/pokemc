@@ -1,6 +1,7 @@
 package uk.pokemc.runtime;
 
 import net.minecraftforge.fml.common.registry.EntityRegistry;
+import uk.pokemc.pokemon.charmander.EntityCharmander;
 import uk.pokemc.pokemon.entities.EntityBulbasaur;
 import uk.pokemc.pokemon.entities.EntityPikachu;
 import uk.pokemc.pokemon.entities.EntitySquirtle;
@@ -28,6 +29,8 @@ public class PokemonRegister {
 		EntityRegistry.registerModEntity(EntityBulbasaur.class, "bulbasaur", EntityBulbasaur.POKEID, PokemcMod.INSTANCE, ENTITY_TRACKING_RANGE,
 				ENTITY_UPDATE_FREQ, ENTITY_SEND_VELO_UPDATES);
 		EntityRegistry.registerModEntity(EntitySquirtle.class, "squirtle", EntitySquirtle.POKEID, PokemcMod.INSTANCE, ENTITY_TRACKING_RANGE,
+				ENTITY_UPDATE_FREQ, ENTITY_SEND_VELO_UPDATES);
+		EntityRegistry.registerModEntity(EntityCharmander.class, "charmander", EntityCharmander.POKEID, PokemcMod.INSTANCE, ENTITY_TRACKING_RANGE,
 				ENTITY_UPDATE_FREQ, ENTITY_SEND_VELO_UPDATES);
 	}
 
